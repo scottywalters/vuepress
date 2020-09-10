@@ -142,7 +142,7 @@ Specify which pattern of files you want to be resolved.
 
 ### palette.styl
 
-To apply simple overrides to the styling of the [default preset](https://github.com/vuejs/vuepress/blob/master/packages/@vuepress/core/lib/client/style/config.styl) or define some variables to use later, you can create a `.vuepress/styles/palette.styl` file.
+To apply simple overrides to the styling of the [default preset](https://github.com/scottywalters/vuepress/blob/master/packages/@vuepress/core/lib/client/style/config.styl) or define some variables to use later, you can create a `.vuepress/styles/palette.styl` file.
 
 There are some predefined variables you can tweak:
 
@@ -236,7 +236,7 @@ Whether to show line numbers to the left of each code blocks.
 ### markdown.slugify
 
 - Type: `Function`
-- Default: [source](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/shared-utils/src/slugify.ts)
+- Default: [source](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/shared-utils/src/slugify.ts)
 
 Function for transforming [header](../miscellaneous/glossary.md#headers) texts into slugs. Changing this affects the ids/links generated for header anchors, [table of contents](../guide/markdown.md#table-of-contents) and [sidebar](../theme/default-theme-config.md#sidebar) links.
 

@@ -47,14 +47,14 @@ module.exports = (themeConfig, ctx) => {
 - 类型: `String`
 - 默认值: undefined
 
-dev 模式下使用的 HTML 模板路径，默认模板见 [这里](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.dev.html)。
+dev 模式下使用的 HTML 模板路径，默认模板见 [这里](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.dev.html)。
 
 ## ssrTemplate <Badge text="Danger Zone"/>
 
 - 类型: `String`
 - 默认值: undefined
 
-build 模式下使用的 HTML 模板路径，默认模板见 [这里](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.ssr.html)。
+build 模式下使用的 HTML 模板路径，默认模板见 [这里](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.ssr.html)。
 
 **参考:**
 
@@ -77,7 +77,7 @@ VuePress 支持一个主题继承于另一个主题。VuePress 将遵循 `overri
 **参考:**
 
 - [主题继承](./inheritance.md)
-- [例子: `@vuepress/theme-vue`](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/theme-vue)
+- [例子: `@vuepress/theme-vue`](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/theme-vue)
 
 ## globalLayout <Badge text="Danger Zone"/>
 
@@ -91,7 +91,7 @@ module.exports = {
 }
 ```
 
-全局布局组件是负责管理全局布局方案的一个组件，VuePress [默认的 globalLayout](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/client/components/GlobalLayout.vue)会帮你根据 [$frontmatter.layout](../guide/frontmatter.md#layout) 来渲染不同的布局，所以大部分情况下你不要配置此选项。
+全局布局组件是负责管理全局布局方案的一个组件，VuePress [默认的 globalLayout](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/core/lib/client/components/GlobalLayout.vue)会帮你根据 [$frontmatter.layout](../guide/frontmatter.md#layout) 来渲染不同的布局，所以大部分情况下你不要配置此选项。
 
 举例来说，当你想为当前主题设置全局的 header 和 footer 时，你可以这样做：
 

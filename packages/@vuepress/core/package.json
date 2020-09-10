@@ -2,32 +2,26 @@
   "name": "@vuepress/core",
   "version": "1.2.0",
   "description": "Minimalistic doc generator with Vue component based layout system",
-  "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vuejs/vuepress.git",
-    "directory": "packages/@vuepress/core"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "documentation",
-    "vue",
-    "generator"
+    "generator",
+    "vue"
   ],
-  "author": "Evan You",
-  "maintainers": [
-    {
-      "name": "ULIVZ",
-      "email": "chl814@foxmail.com"
-    }
-  ],
-  "license": "MIT",
+  "homepage": "https://github.com/scottywalters/vuepress#readme",
   "bugs": {
-    "url": "https://github.com/vuejs/vuepress/issues"
+    "url": "https://github.com/scottywalters/vuepress/issues"
   },
-  "homepage": "https://github.com/vuejs/vuepress#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottywalters/vuepress.git",
+    "directory": "packages/@vuepress/core"
+  },
+  "license": "MIT",
+  "author": "Evan You",
+  "main": "lib/index.js",
+  "browserslist": [
+    ">1%"
+  ],
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@vue/babel-preset-app": "^3.1.1",
@@ -70,7 +64,13 @@
   "engines": {
     "node": ">=8.6"
   },
-  "browserslist": [
-    ">1%"
+  "publishConfig": {
+    "access": "public"
+  },
+  "maintainers": [
+    {
+      "name": "ULIVZ",
+      "email": "chl814@foxmail.com"
+    }
   ]
 }

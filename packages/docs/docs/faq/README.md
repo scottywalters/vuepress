@@ -53,8 +53,8 @@ module.exports = (options, ctx) => ({
 
 **Example:**
 
-- [@vuepress/plugin-register-components](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/plugin-register-components/index.js#L24): Automatically registering components on the client-side.
-- [@vuepress/plugin-google-analytics](https://github.com/vuejs/vuepress/blob/master/packages/@vuepress/plugin-google-analytics/enhanceAppFile.js): Automatically set up Google Analytics.
+- [@vuepress/plugin-register-components](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/plugin-register-components/index.js#L24): Automatically registering components on the client-side.
+- [@vuepress/plugin-google-analytics](https://github.com/scottywalters/vuepress/blob/master/packages/@vuepress/plugin-google-analytics/enhanceAppFile.js): Automatically set up Google Analytics.
 
 ## When do I need to use `clientDynamicModules`?
 

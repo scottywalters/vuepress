@@ -3,7 +3,7 @@ title: last-updated
 metaTitle: Last-Updated Plugin | VuePress
 ---
 
-# [@vuepress/plugin-last-updated](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/plugin-last-updated)
+# [@vuepress/plugin-last-updated](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/plugin-last-updated)
 
 > last-updated plugin for VuePress
 

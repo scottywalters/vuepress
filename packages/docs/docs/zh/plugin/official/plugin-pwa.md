@@ -3,7 +3,7 @@ title: pwa
 metaTitle: PWA 插件 | VuePress
 ---
 
-# [@vuepress/plugin-pwa](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/plugin-pwa)
+# [@vuepress/plugin-pwa](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/plugin-pwa)
 
 > PWA 插件
 
@@ -204,7 +204,7 @@ module.exports = {
 }
 ```
 
-欢迎提交 PR 以增加默认的 [i18n 配置](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/plugin-pwa/lib/i18n.js).
+欢迎提交 PR 以增加默认的 [i18n 配置](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/plugin-pwa/lib/i18n.js).
 
 ## 自定义 SW-Update Popup 的 UI
 

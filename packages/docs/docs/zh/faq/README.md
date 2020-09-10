@@ -53,8 +53,8 @@ module.exports = (options, ctx) => ({
 
 **比如：**
 
-- [@vuepress/plugin-register-components](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/plugin-register-components/index.js#L24)：在客户端自动注册组件
-- [@vuepress/plugin-google-analytics](https://github.com/vuejs/vuepress/blob/master/packages/@vuepress/plugin-google-analytics/enhanceAppFile.js)：自动配置 Google Analytics
+- [@vuepress/plugin-register-components](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/plugin-register-components/index.js#L24)：在客户端自动注册组件
+- [@vuepress/plugin-google-analytics](https://github.com/scottywalters/vuepress/blob/master/packages/@vuepress/plugin-google-analytics/enhanceAppFile.js)：自动配置 Google Analytics
 
 ## 什么时候需要使用 `clientDynamicModules`?
 

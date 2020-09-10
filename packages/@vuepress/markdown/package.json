@@ -2,22 +2,25 @@
   "name": "@vuepress/markdown",
   "version": "1.2.0",
   "description": "markdown for vuepress",
-  "main": "index.js",
-  "publishConfig": {
-    "access": "public"
+  "keywords": [
+    "documentation",
+    "generator",
+    "markdown",
+    "vue",
+    "vuepress"
+  ],
+  "homepage": "https://github.com/scottywalters/vuepress/packages/@vuepress/markdown#readme",
+  "bugs": {
+    "url": "https://github.com/scottywalters/vuepress/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/vuepress.git",
+    "url": "git+https://github.com/scottywalters/vuepress.git",
     "directory": "packages/@vuepress/markdown"
   },
-  "keywords": [
-    "documentation",
-    "vue",
-    "vuepress",
-    "generator",
-    "markdown"
-  ],
+  "license": "MIT",
+  "author": "Evan You",
+  "main": "index.js",
   "dependencies": {
     "@vuepress/shared-utils": "^1.2.0",
     "markdown-it": "^8.4.1",
@@ -30,16 +33,13 @@
   "devDependencies": {
     "@vuepress/test-utils": "^1.2.0"
   },
-  "author": "Evan You",
+  "publishConfig": {
+    "access": "public"
+  },
   "maintainers": [
     {
       "name": "ULIVZ",
       "email": "chl814@foxmail.com"
     }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vuejs/vuepress/issues"
-  },
-  "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/markdown#readme"
+  ]
 }

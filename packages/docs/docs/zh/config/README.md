@@ -138,7 +138,7 @@ Specify which pattern of files you want to be resolved.
 
 ### palette.styl
 
-如果要对[默认预设](https://github.com/vuejs/vuepress/blob/master/packages/@vuepress/core/lib/client/style/config.styl)的样式进行简单的替换，或者定义一些变量供以后使用，你可以创建一个 `.vuepress/styles/palette.styl` 文件。
+如果要对[默认预设](https://github.com/scottywalters/vuepress/blob/master/packages/@vuepress/core/lib/client/style/config.styl)的样式进行简单的替换，或者定义一些变量供以后使用，你可以创建一个 `.vuepress/styles/palette.styl` 文件。
 
 你可以调整的一些变量如下:
 
@@ -228,7 +228,7 @@ VuePress 提供了一种添加额外样式的简便方法。你可以创建一�
 ### markdown.slugify
 
 - 类型: `Function`
-- 默认值: [source](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/shared-utils/src/slugify.ts)
+- 默认值: [source](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/shared-utils/src/slugify.ts)
 
 一个将标题文本转换为 slug 的函数。修改它会影响 [标题](../miscellaneous/glossary.md#headers)、[目录](../guide/markdown.md#目录)、以及[侧边栏](../theme/default-theme-config.md#侧边栏)链接的 id 和 链接。
 

@@ -53,7 +53,7 @@ theme
 └── package.json
 :::
 
-- `theme/global-components`: Components under this directory will be automatically registered as global components. For details, please check out [@vuepress/plugin-register-components](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/plugin-register-components).
+- `theme/global-components`: Components under this directory will be automatically registered as global components. For details, please check out [@vuepress/plugin-register-components](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/plugin-register-components).
 - `theme/components`: Your components.
 - `theme/layouts`: Layout components of the theme, where `Layout.vue` is required.
 - `theme/styles`: Global style and palette.

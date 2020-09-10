@@ -8,13 +8,13 @@
     "generator",
     "vue"
   ],
-  "homepage": "https://github.com/vuejs/vuepress#readme",
+  "homepage": "https://github.com/scottywalters/vuepress#readme",
   "bugs": {
-    "url": "https://github.com/vuejs/vuepress/issues"
+    "url": "https://github.com/scottywalters/vuepress/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/vuepress.git"
+    "url": "git+https://github.com/scottywalters/vuepress.git"
   },
   "license": "MIT",
   "author": "Evan You",

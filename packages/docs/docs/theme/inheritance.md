@@ -157,7 +157,7 @@ This way, you can "tamper" with some part of an atomic theme.
 
 ## Access Parent Theme
 
-You can use `@parent-theme` to access the root path of the parent theme. The following example shows creating a layout component with the same name in a child theme and using slots in the parent theme. [@vuepress/theme-vue](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/theme-vue) is created in this way.
+You can use `@parent-theme` to access the root path of the parent theme. The following example shows creating a layout component with the same name in a child theme and using slots in the parent theme. [@vuepress/theme-vue](https://github.com/scottywalters/vuepress/tree/master/packages/%40vuepress/theme-vue) is created in this way.
 
 ```vue
 <!-- themePath/components/Foo.vue -->

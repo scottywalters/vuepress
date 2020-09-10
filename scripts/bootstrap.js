@@ -27,7 +27,7 @@ files.forEach(pkg => {
       },
       'repository': {
         'type': 'git',
-        'url': 'git+https://github.com/vuejs/vuepress.git'
+        'url': 'git+https://github.com/scottywalters/vuepress.git'
       },
       'keywords': [
         'documentation',
@@ -38,9 +38,9 @@ files.forEach(pkg => {
       'author': 'ULIVZ <chl814@foxmail.com>',
       'license': 'MIT',
       'bugs': {
-        'url': 'https://github.com/vuejs/vuepress/issues'
+        'url': 'https://github.com/scottywalters/vuepress/issues'
       },
-      'homepage': `https://github.com/vuejs/vuepress/packages/@vuepress/${pkg}#readme`
+      'homepage': `https://github.com/scottywalters/vuepress/packages/@vuepress/${pkg}#readme`
     }
     fs.writeFileSync(pkgPath, JSON.stringify(json, null, 2))
   }

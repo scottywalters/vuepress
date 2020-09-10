@@ -12,7 +12,7 @@ You should consider using this process if you intend to make `"substantial"` cha
 
 ## The RFC life-cycle
 
-- Fork this repo https://github.com/vuejs/vuepress.
+- Fork this repo https://github.com/scottywalters/vuepress.
 - Copy `rfcs/template.md` to `rfcs/text/0000-feature.md` (where 'feature' is descriptive. Don't assign an RFC number yet).
 - Fill in the RFC. Put care into the details.
 - Submit a pull request.

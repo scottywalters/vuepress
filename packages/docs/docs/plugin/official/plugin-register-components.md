@@ -3,7 +3,7 @@ title: register-components
 metaTitle: Register Components Plugin | VuePress
 ---
 
-# [@vuepress/plugin-register-components](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-register-components)
+# [@vuepress/plugin-register-components](https://github.com/scottywalters/vuepress/tree/master/packages/%40vuepress/plugin-register-components)
 
 > register-components plugin for VuePress
 

@@ -16,7 +16,7 @@ VuePress 1.0 has been rewritten extensively, and the most important one is the i
 
 ### Decoupling
 
-With plugins, we can implement many of the core functions with plugins, and you can see many built-in plugins [here](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/core/lib/node/internal-plugins) that cover many of the core functions of VuePress, which used to blend in all parts of the code base, but now they’re clear at a glance.
+With plugins, we can implement many of the core functions with plugins, and you can see many built-in plugins [here](https://github.com/scottywalters/vuepress/tree/master/packages/%40vuepress/core/lib/node/internal-plugins) that cover many of the core functions of VuePress, which used to blend in all parts of the code base, but now they’re clear at a glance.
 
 ### Configuration management
 
@@ -109,7 +109,7 @@ cond2(yes, bottom)->stage2
 <!-- textlint-enable -->
 
 ::: warning Note
-When customizing `templates/ssr.html`, or `templates/dev.html`, it’s best to edit it on the basis of the [default template files](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/app/index.dev.html), otherwise it may cause a build failure.
+When customizing `templates/ssr.html`, or `templates/dev.html`, it’s best to edit it on the basis of the [default template files](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/core/lib/app/index.dev.html), otherwise it may cause a build failure.
 :::
 
 ### Overriding
@@ -193,8 +193,8 @@ Then the final value of `name` option will be `bar`.
 
 With the goal of decoupling, we were able to separate VuePress into the following two libraries by introducing monorepo:
 
-- [@vuepress/core](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/core)：Including the core implementation of `dev`, `build` and `Plugin API`;
-- [@vuepress/theme-default](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/theme-default)：The default theme you see now.
+- [@vuepress/core](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/core)：Including the core implementation of `dev`, `build` and `Plugin API`;
+- [@vuepress/theme-default](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/theme-default)：The default theme you see now.
 
 Of course, for most users, you don’t need to worry about these three libraries. The [VuePress](https://www.npmjs.com/search?Q=vuepress) package has already assembled them together, so you can use VuePress like `0.x`.
 

@@ -57,7 +57,7 @@ module.exports = class Build extends EventEmitter {
     // remove manifests after loading them.
     await fs.remove(path.resolve(this.outDir, 'manifest'))
 
-    // ref: https://github.com/vuejs/vuepress/issues/1367
+    // ref: https://github.com/scottywalters/vuepress/issues/1367
     if (!this.clientConfig.devtool && (!this.clientConfig.plugins
       || !this.clientConfig.plugins.some(p =>
         p instanceof webpack.SourceMapDevToolPlugin

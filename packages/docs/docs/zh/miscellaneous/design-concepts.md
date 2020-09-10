@@ -16,7 +16,7 @@ VuePress 1.0 进行了大范围的重写，其中最重要的就是引入 [Plugi
 
 ### 解耦
 
-有了插件，我们可以将很多核心功能用插件来实现，你可以在[这里](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/core/lib/node/internal-plugins)看到很多内置的插件，这些插件涵盖了很多 VuePress 的核心功能，在以前，它们糅合在代码库的各个地方，但现在，它们一目了然。
+有了插件，我们可以将很多核心功能用插件来实现，你可以在[这里](https://github.com/scottywalters/vuepress/tree/master/packages/%40vuepress/core/lib/node/internal-plugins)看到很多内置的插件，这些插件涵盖了很多 VuePress 的核心功能，在以前，它们糅合在代码库的各个地方，但现在，它们一目了然。
 
 ### 配置的管理
 
@@ -106,7 +106,7 @@ cond2(yes, bottom)->stage2
 @flowend
 
 ::: warning 注意
-当你想要去自定义 `templates/ssr.html` 或 `templates/dev.html` 时，最好基于 [默认的模板文件](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/app/index.dev.html) 来修改，否则可能会导致构建出错。
+当你想要去自定义 `templates/ssr.html` 或 `templates/dev.html` 时，最好基于 [默认的模板文件](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/core/lib/app/index.dev.html) 来修改，否则可能会导致构建出错。
 :::
 
 ### Overriding
@@ -189,7 +189,7 @@ name 的最终值将是 `bar`.
 
 本着解耦的目标，引入 monorepo 后，我们也得以将 VuePress 分离成以下两个库：
 
-- [@vuepress/core](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/core)：包含 dev、build 的核心实现和 Plugin API；
-- [@vuepress/theme-default](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/theme-default)：你现在所看到的默认主题。
+- [@vuepress/core](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/core)：包含 dev、build 的核心实现和 Plugin API；
+- [@vuepress/theme-default](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/theme-default)：你现在所看到的默认主题。
 
 当然，对于大多数用户来说，你并不需要关心上述三个库，[vuepress](https://www.npmjs.com/search?q=vuepress) 这个包已经将上述三个包组装在一起，因此你完全可以像 `0.x` 那样使用 VuePress。

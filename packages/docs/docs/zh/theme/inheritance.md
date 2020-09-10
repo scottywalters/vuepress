@@ -153,7 +153,7 @@ theme
 
 ## 访问父主题
 
-你可以使用 `@parent-theme` 来访问父主题的根路径，下述示例展示了在子主题中创建一个同名的布局组件，并简单使用父主题中的 slot，[@vuepress/theme-vue](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/theme-vue) 便是通过这种方式创造的。
+你可以使用 `@parent-theme` 来访问父主题的根路径，下述示例展示了在子主题中创建一个同名的布局组件，并简单使用父主题中的 slot，[@vuepress/theme-vue](https://github.com/scottywalters/vuepress/tree/master/packages/%40vuepress/theme-vue) 便是通过这种方式创造的。
 
 ```vue
 <!-- themePath/components/Foo.vue -->

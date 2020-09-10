@@ -48,7 +48,7 @@ Regardless of whether the permalink and clean-urls plugins are used, your relati
 Outbound links automatically gets `target="_blank" rel="noopener noreferrer"`:
 
 - [vuejs.org](https://vuejs.org)
-- [VuePress on GitHub](https://github.com/vuejs/vuepress)
+- [VuePress on GitHub](https://github.com/scottywalters/vuepress)
 
 You can customize the attributes added to external links by setting [config.markdown.externalLinks](../config/README.md#markdown-externallinks).
 

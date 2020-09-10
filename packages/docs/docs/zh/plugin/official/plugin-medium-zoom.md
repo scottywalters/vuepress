@@ -3,7 +3,7 @@ title: medium-zoom
 metaTitle: Medium-Zoom 插件 | VuePress
 ---
 
-# [@vuepress/plugin-medium-zoom](https://github.com/vuejs/vuepress/tree/master/packages/@vuepress/plugin-medium-zoom)
+# [@vuepress/plugin-medium-zoom](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/plugin-medium-zoom)
 
 > [medium-zoom](https://github.com/francoischalifour/medium-zoom) 插件
 

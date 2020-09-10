@@ -62,7 +62,7 @@ module.exports = [
           },
           {
             text: 'Changelog',
-            link: 'https://github.com/vuejs/vuepress/blob/master/CHANGELOG.md'
+            link: 'https://github.com/scottywalters/vuepress/blob/master/CHANGELOG.md'
           }
         ]
       }

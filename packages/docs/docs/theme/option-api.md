@@ -49,14 +49,14 @@ You probably don’t need to use following options tagged with <Badge text="Dang
 - Type: `String`
 - Default: undefined
 
-HTML template path used in `dev` mode, default template see [here](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.dev.html)
+HTML template path used in `dev` mode, default template see [here](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.dev.html)
 
 ## ssrTemplate <Badge text="Danger Zone"/>
 
 - Type: `String`
 - Default: undefined
 
-HTML template path used in `build` mode, default template see [here](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.ssr.html)
+HTML template path used in `build` mode, default template see [here](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.ssr.html)
 
 **Also see:**
 
@@ -92,7 +92,7 @@ module.exports = {
 }
 ```
 
-Global layout component is a component responsible for the global layout strategy. The [default global layout](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/client/components/GlobalLayout.vue) will help you render different layouts according to [$frontmatter.layout](../guide/frontmatter.md#layout), so in most cases you do not need to configure this option.
+Global layout component is a component responsible for the global layout strategy. The [default global layout](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/core/lib/client/components/GlobalLayout.vue) will help you render different layouts according to [$frontmatter.layout](../guide/frontmatter.md#layout), so in most cases you do not need to configure this option.
 
 For example, when you want to set a global header and footer for your theme, you can do this:
 

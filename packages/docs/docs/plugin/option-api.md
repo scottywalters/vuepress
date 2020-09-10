@@ -219,7 +219,7 @@ module.exports = {
 
 **Also see:**
 
-- [Internal markdown-it plugins in VuePress](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/markdown/index.js)
+- [Internal markdown-it plugins in VuePress](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/markdown/index.js)
 - [Config plugins](https://github.com/neutrinojs/webpack-chain#config-plugins)
 
 ## enhanceAppFiles

@@ -27,7 +27,7 @@ module.exports = ctx => ({
   ],
   theme: '@vuepress/vue',
   themeConfig: {
-    repo: 'vuejs/vuepress',
+    repo: 'scottywalters/vuepress',
     editLinks: true,
     docsDir: 'packages/docs/docs',
     // #697 Provided by the official algolia team.

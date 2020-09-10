@@ -3,7 +3,7 @@ title: nprogress
 metaTitle: Nprogress Plugin | VuePress
 ---
 
-# [@vuepress/plugin-nprogress](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-nprogress)
+# [@vuepress/plugin-nprogress](https://github.com/scottywalters/vuepress/tree/master/packages/%40vuepress/plugin-nprogress)
 
 > A progress bar plugin based on [nprogress](https://github.com/rstacruz/nprogress).
 

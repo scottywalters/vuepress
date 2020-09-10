@@ -3,7 +3,7 @@ title: nprogress
 metaTitle: Nprogress 插件 | VuePress
 ---
 
-# [@vuepress/plugin-nprogress](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-nprogress)
+# [@vuepress/plugin-nprogress](https://github.com/scottywalters/vuepress/tree/master/packages/%40vuepress/plugin-nprogress)
 
 > 一个基于 [nprogress](https://github.com/rstacruz/nprogress) 的进度条插件。
 

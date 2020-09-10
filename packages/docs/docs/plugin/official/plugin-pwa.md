@@ -3,7 +3,7 @@ title: pwa
 metaTitle: PWA Plugin | VuePress
 ---
 
-# [@vuepress/plugin-pwa](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-pwa)
+# [@vuepress/plugin-pwa](https://github.com/scottywalters/vuepress/tree/master/packages/%40vuepress/plugin-pwa)
 
 > PWA plugin
 
@@ -204,7 +204,7 @@ module.exports = {
 }
 ```
 
-Feel free to submit PRs to improve the default [i18n configuration](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/plugin-pwa/lib/i18n.js).
+Feel free to submit PRs to improve the default [i18n configuration](https://github.com/scottywalters/vuepress/blob/master/packages/%40vuepress/plugin-pwa/lib/i18n.js).
 
 ## Customize the UI of SW-Update Popup
 

@@ -452,7 +452,7 @@ Providing `themeConfig.repo` auto generates a GitHub link in the navbar and "Edi
 module.exports = {
   themeConfig: {
     // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'vuejs/vuepress',
+    repo: 'scottywalters/vuepress',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: 'Contribute!',
@@ -460,7 +460,7 @@ module.exports = {
     // Optional options for generating "Edit this page" link
 
     // if your docs are in a different repo from your main project:
-    docsRepo: 'vuejs/vuepress',
+    docsRepo: 'scottywalters/vuepress',
     // if your docs are not at the root of the repo:
     docsDir: 'docs',
     // if your docs are in a specific branch (defaults to 'master'):
