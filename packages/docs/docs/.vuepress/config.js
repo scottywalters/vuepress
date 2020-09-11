@@ -5,13 +5,13 @@ module.exports = ctx => ({
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator'
+      title: 'Physics Design System',
+      description: 'Design System for SunCHECK™'
     },
     '/zh/': {
       lang: 'zh-CN',
-      title: 'VuePress',
-      description: 'Vue 驱动的静态网站生成器'
+      title: 'Physics Design System',
+      description: 'Design System for SunCHECK™'
     }
   },
   head: [
@@ -75,7 +75,7 @@ module.exports = ctx => ({
     }],
     ['@vuepress/medium-zoom', true],
     ['@vuepress/google-analytics', {
-      ga: 'UA-128189152-1'
+      ga: 'UA-177805551-1'
     }],
     ['container', {
       type: 'vue',
