@@ -4,7 +4,7 @@
       <!-- <CarbonAds /> -->
     </template>
     <template #page-bottom>
-      <BuySellAds />
+      <!-- <BuySellAds /> -->
     </template>
   </ParentLayout>
 </template>
@@ -12,7 +12,7 @@
 <script>
 import ParentLayout from '@parent-theme/layouts/Layout.vue'
 // import CarbonAds from '@theme/components/CarbonAds.vue'
-import BuySellAds from '@theme/components/BuySellAds.vue'
+// import BuySellAds from '@theme/components/BuySellAds.vue'
 
 export default {
   name: 'Layout',
@@ -20,7 +20,7 @@ export default {
   components: {
     ParentLayout,
     // CarbonAds,
-    BuySellAds
+    // BuySellAds
   }
 }
 </script>
