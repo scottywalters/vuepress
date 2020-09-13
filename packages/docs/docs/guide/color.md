@@ -1,6 +1,6 @@
 # Color
 
 ## Usage
-asdf
+Explicit usage of color
 ## This
 asdf
