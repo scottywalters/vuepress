@@ -109,6 +109,8 @@ function getGuideSidebar (groupA, groupB) {
       collapsable: false,
       children: [
         '',
+        'color',
+        'typography',
         'getting-started',
         'directory-structure',
         'basic-config',

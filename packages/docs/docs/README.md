@@ -6,9 +6,9 @@ actionLink: /guide/
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-<div style="text-align: center">
+<!-- <div style="text-align: center">
   <Bit/>
-</div>
+</div> -->
 
 <div class="features">
   <div class="feature">
@@ -25,9 +25,9 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
   </div>
 </div>
 
-### As Easy as 1, 2, 3
+<!-- ### As Easy as 1, 2, 3 -->
 
-``` bash
+<!-- ``` bash
 # install
 yarn global add vuepress
 # OR npm install -g vuepress
@@ -40,8 +40,8 @@ vuepress dev
 
 # build to static files
 vuepress build
-```
+``` -->
 
-::: warning COMPATIBILITY NOTE
+<!-- ::: warning COMPATIBILITY NOTE
 VuePress requires Node.js >= 8.6.
-:::
+::: -->
