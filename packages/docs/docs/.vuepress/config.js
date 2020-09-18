@@ -6,8 +6,13 @@ module.exports = ctx => ({
     '/': {
       lang: 'en-US',
       title: 'Physics Design System',
-      description: 'Design building blocks for SunCHECK™ products'
-    },
+      description: 'Design System for SunCHECK™'
+    }
+    // '/zh/': {
+    //   lang: 'zh-CN',
+    //   title: 'Physics Design System',
+    //   description: 'Design System for SunCHECK™'
+    // }
   },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
@@ -26,12 +31,11 @@ module.exports = ctx => ({
     editLinks: true,
     docsDir: 'packages/docs/docs',
     // #697 Provided by the official algolia team.
-    // algolia: ctx.isProd ? ({
-    //   apiKey: '3a539aab83105f01761a137c61004d85',
-    //   indexName: 'vuepress'
-    // }) : null,
-    search: true,
-    searchMaxSuggestions: 10,
+    algolia: ctx.isProd ? ({
+      apiKey: '3a539aab83105f01761a137c61004d85',
+      indexName: 'vuepress'
+    }) : null,
+    logo: '/logo.png',
     smoothScroll: true,
     locales: {
       '/': {
@@ -43,11 +47,25 @@ module.exports = ctx => ({
         nav: require('./nav/en'),
         sidebar: {
           '/api/': getApiSidebar(),
-          '/guidelines/': getGuidelinesSidebar('Guidelines', 'Components', 'Patterns'),
+          '/guide/': getGuideSidebar('Guide', 'Advanced'),
           '/plugin/': getPluginSidebar('Plugin', 'Introduction', 'Official Plugins'),
           '/theme/': getThemeSidebar('Theme', 'Introduction')
         }
-      },
+      }
+      // '/zh/': {
+      //   label: '简体中文',
+      //   selectText: '选择语言',
+      //   ariaLabel: '选择语言',
+      //   editLinkText: '在 GitHub 上编辑此页',
+      //   lastUpdated: '上次更新',
+      //   nav: require('./nav/zh'),
+      //   sidebar: {
+      //     '/zh/api/': getApiSidebar(),
+      //     '/zh/guide/': getGuideSidebar('指南', '深入'),
+      //     '/zh/plugin/': getPluginSidebar('插件', '介绍', '官方插件'),
+      //     '/zh/theme/': getThemeSidebar('主题', '介绍')
+      //   }
+      // }
     }
   },
   plugins: [
@@ -85,7 +103,7 @@ function getApiSidebar () {
   ]
 }
 
-function getGuidelinesSidebar (groupA, groupB, groupC) {
+function getGuideSidebar (groupA, groupB) {
   return [
     {
       title: groupA,
@@ -96,25 +114,22 @@ function getGuidelinesSidebar (groupA, groupB, groupC) {
         'typography',
         'getting-started',
         'directory-structure',
-      ]
-    },
-    {
-      title: groupB,
-      collapsable: false,
-      children: [
+        'basic-config',
+        'assets',
+        'markdown',
         'using-vue',
         'i18n',
         'deploy'
       ]
     },
     {
-      title: groupC,
+      title: groupB,
       collapsable: false,
       children: [
-        'login',
-        'basic-config',
-        'assets',
-        'markdown',
+        'frontmatter',
+        'permalinks',
+        'markdown-slot',
+        'global-computed'
       ]
     }
   ]
