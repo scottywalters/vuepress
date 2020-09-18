@@ -7,12 +7,12 @@ module.exports = ctx => ({
       lang: 'en-US',
       title: 'Physics Design System',
       description: 'Design System for SunCHECK™'
-    },
-    '/zh/': {
-      lang: 'zh-CN',
-      title: 'Physics Design System',
-      description: 'Design System for SunCHECK™'
     }
+    // '/zh/': {
+    //   lang: 'zh-CN',
+    //   title: 'Physics Design System',
+    //   description: 'Design System for SunCHECK™'
+    // }
   },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
@@ -35,6 +35,7 @@ module.exports = ctx => ({
       apiKey: '3a539aab83105f01761a137c61004d85',
       indexName: 'vuepress'
     }) : null,
+    logo: '/logo.png',
     smoothScroll: true,
     locales: {
       '/': {
@@ -50,21 +51,21 @@ module.exports = ctx => ({
           '/plugin/': getPluginSidebar('Plugin', 'Introduction', 'Official Plugins'),
           '/theme/': getThemeSidebar('Theme', 'Introduction')
         }
-      },
-      '/zh/': {
-        label: '简体中文',
-        selectText: '选择语言',
-        ariaLabel: '选择语言',
-        editLinkText: '在 GitHub 上编辑此页',
-        lastUpdated: '上次更新',
-        nav: require('./nav/zh'),
-        sidebar: {
-          '/zh/api/': getApiSidebar(),
-          '/zh/guide/': getGuideSidebar('指南', '深入'),
-          '/zh/plugin/': getPluginSidebar('插件', '介绍', '官方插件'),
-          '/zh/theme/': getThemeSidebar('主题', '介绍')
-        }
       }
+      // '/zh/': {
+      //   label: '简体中文',
+      //   selectText: '选择语言',
+      //   ariaLabel: '选择语言',
+      //   editLinkText: '在 GitHub 上编辑此页',
+      //   lastUpdated: '上次更新',
+      //   nav: require('./nav/zh'),
+      //   sidebar: {
+      //     '/zh/api/': getApiSidebar(),
+      //     '/zh/guide/': getGuideSidebar('指南', '深入'),
+      //     '/zh/plugin/': getPluginSidebar('插件', '介绍', '官方插件'),
+      //     '/zh/theme/': getThemeSidebar('主题', '介绍')
+      //   }
+      // }
     }
   },
   plugins: [
@@ -73,15 +74,7 @@ module.exports = ctx => ({
       serviceWorker: true,
       updatePopup: true
     }],
-    ['@vuepress/medium-zoom', {
-        selector: 'img.zoom-custom-imgs',
-        // medium-zoom options here
-        // See: https://github.com/francoischalifour/medium-zoom#options
-        options: {
-          margin: 16
-        }
-      }
-            ],
+    ['@vuepress/medium-zoom', true],
     ['@vuepress/google-analytics', {
       ga: 'UA-177805551-1'
     }],
