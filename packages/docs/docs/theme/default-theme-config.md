@@ -8,7 +8,7 @@ All options listed on this page apply to the default theme only. If you are usin
 
 ## Homepage
 
-The default theme provides a homepage layout (used on [the homepage of this site](../README.md)). To use it, specify `home: true` plus some other metadata in your root `README.md`'s [YAML frontmatter](../guide/markdown.md#front-matter). This is an example of how it works:
+The default theme provides a homepage layout (used on [the homepage of this site](../README.md)). To use it, specify `home: true` plus some other metadata in your root `README.md`'s [YAML frontmatter](../guidelines/markdown.md#front-matter). This is an example of how it works:
 
 ``` yaml
 ---
@@ -17,7 +17,7 @@ heroImage: /hero.png
 heroText: Hero Title
 tagline: Hero subtitle
 actionText: Get Started →
-actionLink: /guide/
+actionLink: /guidelines/
 features:
 - title: Simplicity First
   details: Minimal setup with markdown-centered project structure helps you focus on writing.
@@ -37,11 +37,11 @@ To use a fully custom homepage layout, you can also use a [Custom Layout](#custo
 
 ## Navbar
 
-The Navbar may contain your page title, [Search Box](#search-box), [Navbar Links](#navbar-links), [Languages](../guide/i18n.md) and [Repository Link](#git-repo-and-edit-links), they all depend on your configuration.
+The Navbar may contain your page title, [Search Box](#search-box), [Navbar Links](#navbar-links), [Languages](../guidelines/i18n.md) and [Repository Link](#git-repo-and-edit-links), they all depend on your configuration.
 
 ### Navbar Logo
 
-You can add a logo to the navbar via `themeConfig.logo`. Logo can be placed in [public folder](../guide/assets.md#public-files).
+You can add a logo to the navbar via `themeConfig.logo`. Logo can be placed in [public folder](../guidelines/assets.md#public-files).
 
 ``` js
 // .vuepress/config.js
@@ -62,7 +62,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
+      { text: 'Guide', link: '/guidelines/' },
       { text: 'External', link: 'https://google.com' }
     ]
   }
@@ -77,7 +77,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'External', link: 'https://google.com', target:'_self', rel:'' },
-      { text: 'Guide', link: '/guide/', target:'_blank' }
+      { text: 'Guide', link: '/guidelines/', target:'_blank' }
     ]
   }
 }
@@ -311,7 +311,7 @@ module.exports = {
 }
 ```
 
-In [multi-language](../guide/i18n.md) mode, you can also apply it to a specific locale:
+In [multi-language](../guidelines/i18n.md) mode, you can also apply it to a specific locale:
 
 ``` js
 // .vuepress/config.js

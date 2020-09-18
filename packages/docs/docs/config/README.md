@@ -18,8 +18,8 @@ The `base` is automatically prepended to all the URLs that start with `/` in oth
 
 **Also see:**
 
-- [Base URL](../guide/assets.md#base-url)
-- [Deploy Guide > GitHub Pages](../guide/deploy.md#github-pages)
+- [Base URL](../guidelines/assets.md#base-url)
+- [Deploy Guide > GitHub Pages](../guidelines/deploy.md#github-pages)
 
 ### title
 
@@ -84,7 +84,7 @@ Specify the output directory for `vuepress build`. If a relative path is specifi
 - Type: `{ [path: string]: Object }`
 - Default: `undefined`
 
-Specify locales for i18n support. For more details, see the guide on [Internationalization](../guide/i18n.md).
+Specify locales for i18n support. For more details, see the guide on [Internationalization](../guidelines/i18n.md).
 
 ### shouldPrefetch
 
@@ -229,14 +229,14 @@ Whether to show line numbers to the left of each code blocks.
 
 **Also see:**
 
-- [Line Numbers](../guide/markdown.md#line-numbers)
+- [Line Numbers](../guidelines/markdown.md#line-numbers)
 
 ### markdown.slugify
 
 - Type: `Function`
 - Default: [source](https://github.com/scottywalters/vuepress/tree/master/packages/@vuepress/shared-utils/src/slugify.ts)
 
-Function for transforming [header](../miscellaneous/glossary.md#headers) texts into slugs. Changing this affects the ids/links generated for header anchors, [table of contents](../guide/markdown.md#table-of-contents) and [sidebar](../theme/default-theme-config.md#sidebar) links.
+Function for transforming [header](../miscellaneous/glossary.md#headers) texts into slugs. Changing this affects the ids/links generated for header anchors, [table of contents](../guidelines/markdown.md#table-of-contents) and [sidebar](../theme/default-theme-config.md#sidebar) links.
 
 ### markdown.anchor
 
@@ -331,7 +331,7 @@ module.exports = {
 ## Build Pipeline
 
 :::tip Configuring CSS Pre-processors
-VuePress comes with built-in webpack config for the CSS pre-processors listed below. For more information on installation these or pre-processors without built-in support, see [Using Pre-Processors](../guide/using-vue.md#using-pre-processors) for more information.
+VuePress comes with built-in webpack config for the CSS pre-processors listed below. For more information on installation these or pre-processors without built-in support, see [Using Pre-Processors](../guidelines/using-vue.md#using-pre-processors) for more information.
 :::
 
 ### postcss

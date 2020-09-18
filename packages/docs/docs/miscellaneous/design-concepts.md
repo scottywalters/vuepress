@@ -78,7 +78,7 @@ module.exports = {
 
 ## Convention over configuration.
 
-VuePress 1.0 begin to introduce some conventions to reduce the user’s excessive configuration pressure, the most intuitive manifestation of this is the conventions for the [document directory structure](../guide/directory-structure.md) and the [theme directory structure](../theme/writing-a-theme.md#directory-structure).
+VuePress 1.0 begin to introduce some conventions to reduce the user’s excessive configuration pressure, the most intuitive manifestation of this is the conventions for the [document directory structure](../guidelines/directory-structure.md) and the [theme directory structure](../theme/writing-a-theme.md#directory-structure).
 
 In the future, we may combine community feedback to introduce more agreements. Let’s wait and see.
 

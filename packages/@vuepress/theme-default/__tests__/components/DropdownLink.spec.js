@@ -9,8 +9,8 @@ describe('DropdownLink', () => {
       ariaLabel: 'Learn More Select',
       items: [
         {
-          text: 'Guide',
-          link: '/guide/'
+          text: 'Guidelines',
+          link: '/guidelines/'
         },
         {
           text: 'Config Reference',

@@ -48,7 +48,7 @@ module.exports = {
 - Type: `string`
 - Default: `.theme-default-content :not(a) > img`
 
-Note that `.theme-default-content` is the class name of [`<Content />`](../../guide/using-vue.md#content) component in default theme.
+Note that `.theme-default-content` is the class name of [`<Content />`](../../guidelines/using-vue.md#content) component in default theme.
 
 ### options
 

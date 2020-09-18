@@ -16,13 +16,13 @@ Name of the layout component used by the current page.
 
 - Access: `$page.frontmatter`
 
-Configuration wrapped by `---` in the `markdown` file of the current page, generally used to do some page-level configuration. For more details, please see [Frontmatter](../guide/frontmatter.md).
+Configuration wrapped by `---` in the `markdown` file of the current page, generally used to do some page-level configuration. For more details, please see [Frontmatter](../guidelines/frontmatter.md).
 
 ## permalink
 
 - Access: `$page.frontmatter.permalink`
 
-Permalinks. For more details, please head [permalinks](../guide/permalinks.md).
+Permalinks. For more details, please head [permalinks](../guidelines/permalinks.md).
 
 ## regularPath
 

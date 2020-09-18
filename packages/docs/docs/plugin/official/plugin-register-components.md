@@ -29,7 +29,7 @@ module.exports = {
 - Type: `Array | String`
 - Default: `[]`
 
-All components in this directory will be registered as global components, naming of components will follow the components found in [.vuepress/components](https://vuepress.vuejs.org/guide/using-vue.html#using-components).
+All components in this directory will be registered as global components, naming of components will follow the components found in [.vuepress/components](https://vuepress.vuejs.org/guidelines/using-vue.html#using-components).
 
 ``` js
 module.exports = {

@@ -1,7 +1,7 @@
 module.exports = [
   {
     text: '指南',
-    link: '/zh/guide/'
+    link: '/zh/guidelines/'
   },
   {
     text: '配置',

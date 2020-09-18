@@ -25,7 +25,7 @@ The compiled content of the current `.md` file being rendered will be available 
 
 **Also see:**
 
-- [Markdown Slot](../guide/markdown-slot.md)
+- [Markdown Slot](../guidelines/markdown-slot.md)
 
 ## Directory Structure
 
@@ -137,14 +137,14 @@ This is the value of `$site` of this website:
 }
 ```
 
-`title`, `description` and `base` are copied from respective fields in `.vuepress/config.js`. `pages` contains an array of metadata objects for each page, including its path, page title (explicitly specified in [YAML frontmatter](../guide/markdown.md#front-matter) or inferred from the first header on the page), and any YAML frontmatter data in that file.
+`title`, `description` and `base` are copied from respective fields in `.vuepress/config.js`. `pages` contains an array of metadata objects for each page, including its path, page title (explicitly specified in [YAML frontmatter](../guidelines/markdown.md#front-matter) or inferred from the first header on the page), and any YAML frontmatter data in that file.
 
 This is the `$page` object for this page you are looking at:
 
 ``` json
 {
   "lastUpdated": 1524847549000,
-  "path": "/guide/custom-themes.html",
+  "path": "/guidelines/custom-themes.html",
   "title": "Custom Themes",
   "headers": [/* ... */],
   "frontmatter": {}

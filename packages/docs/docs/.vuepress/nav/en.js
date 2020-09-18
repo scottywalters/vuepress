@@ -1,7 +1,7 @@
 module.exports = [
   {
-    text: 'Guide',
-    link: '/guide/'
+    text: 'Guidelines',
+    link: '/guidelines/'
   },
   {
     text: 'Config Reference',
@@ -67,9 +67,5 @@ module.exports = [
         ]
       }
     ]
-  },
-  {
-    text: '0.x',
-    link: 'https://v0.vuepress.vuejs.org/'
   }
 ]

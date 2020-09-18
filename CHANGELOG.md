@@ -434,7 +434,7 @@ It seems no any changes here.
 * **$core:** Cannot load assets when `base` is not '/' (close:  [#1238](https://github.com/vuejs/vuepress/issues/1238))([#1239](https://github.com/vuejs/vuepress/issues/1239)) ([8a234bb](https://github.com/vuejs/vuepress/commit/8a234bb))
   <br>This is a regression issue of leverage webpack-dev-server at [#1195](https://github.com/vuejs/vuepress/issues/1195).
 
-* **$markdown:** Remove colon as separator for [Import Code Snippets](https://v1.vuepress.vuejs.org/guide/markdown.html#import-code-snippets) (close: [#1151](https://github.com/vuejs/vuepress/issues/1151)) ([#1236](https://github.com/vuejs/vuepress/issues/1236)) ([099d346](https://github.com/vuejs/vuepress/commit/099d346))
+* **$markdown:** Remove colon as separator for [Import Code Snippets](https://v1.vuepress.vuejs.org/guidelines/markdown.html#import-code-snippets) (close: [#1151](https://github.com/vuejs/vuepress/issues/1151)) ([#1236](https://github.com/vuejs/vuepress/issues/1236)) ([099d346](https://github.com/vuejs/vuepress/commit/099d346))
 
 
 ### Features
@@ -971,10 +971,10 @@ It seems no any changes here.
 
 - **Permalinks**
   - From now on, VuePress supports custom routing in addition to the default file-level-based routing.
-  - [Documentation](https://v1.vuepress.vuejs.org/guide/permalinks.html)
+  - [Documentation](https://v1.vuepress.vuejs.org/guidelines/permalinks.html)
 
 - **Markdown slots**
-  - [Documentation](https://v1.vuepress.vuejs.org/guide/markdown-slot.html)
+  - [Documentation](https://v1.vuepress.vuejs.org/guidelines/markdown-slot.html)
 
 - **Free to add new pages**
   - You can add new pages with content (i.e. pointing to markdown files) or no content (i.e. common routes).

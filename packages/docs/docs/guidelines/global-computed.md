@@ -1,6 +1,6 @@
 # Global Computed
 
-In VuePress, some core [computed](https://vuejs.org/v2/guide/computed.html#Computed-Properties) properties are built-in for use by [default theme](../theme/default-theme-config.md) or custom themes.
+In VuePress, some core [computed](https://vuejs.org/v2/guidelines/computed.html#Computed-Properties) properties are built-in for use by [default theme](../theme/default-theme-config.md) or custom themes.
 
 ## $site
 
@@ -31,9 +31,9 @@ This is the `$page` value of the page you see now:
 {
   "title": "Global Computed",
   "frontmatter": {},
-  "regularPath": "/guide/global-computed.html",
+  "regularPath": "/guidelines/global-computed.html",
   "key": "v-d4cbeb69eff3d",
-  "path": "/guide/global-computed.html",
+  "path": "/guidelines/global-computed.html",
   "headers": [
     {
       "level": 2,
@@ -60,7 +60,7 @@ The language of the current page, the default value is `en-US`.
 
 **Also see:**
 
-- [Internationalization](../guide/i18n.md)
+- [Internationalization](../guidelines/i18n.md)
 
 ## $localePath
 
@@ -68,7 +68,7 @@ The locale path prefix for the current page, the default value is `/`.
 
 **Also see:**
 
-- [Internationalization](../guide/i18n.md)
+- [Internationalization](../guidelines/i18n.md)
 
 ## $title
 

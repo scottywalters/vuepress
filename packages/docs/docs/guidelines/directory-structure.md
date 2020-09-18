@@ -70,7 +70,7 @@ For the above directory structure, the default page routing paths are as follows
 |    Relative Path   |  Page Routing  |
 |--------------------|----------------|
 | `/README.md`       | `/`            |
-| `/guide/README.md` | `/guide/`      |
+| `/guidelines/README.md` | `/guidelines/`      |
 | `/config.md`       | `/config.html` |
 
 **Also see:**

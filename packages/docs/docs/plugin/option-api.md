@@ -60,7 +60,7 @@ Since VuePress is a Vue-SSR based application, there needs to be two webpack con
 
 **Also see:**
 
-- [Vue SSR > Build Configuration](https://ssr.vuejs.org/guide/build-config.html)
+- [Vue SSR > Build Configuration](https://ssr.vuejs.org/guidelines/build-config.html)
 :::
 
 ## define
@@ -227,7 +227,7 @@ module.exports = {
 - Type: `String | Array | AsyncFunction`
 - Default: `undefined`
 
-This option accepts absolute file path(s) pointing to the enhancement file(s), or a function that returns the path(s), which allows you to do some [App Level Enhancements](../guide/basic-config.md#app-level-enhancements).
+This option accepts absolute file path(s) pointing to the enhancement file(s), or a function that returns the path(s), which allows you to do some [App Level Enhancements](../guidelines/basic-config.md#app-level-enhancements).
 
 ``` js
 import { resolve } from 'path'
@@ -283,7 +283,7 @@ import { SOURCE_DIR } from '@dynamic/constants'
 - Type: `Function|AsyncFunction`
 - Default: `undefined`
 
-A function used to extend or edit the [$page](../guide/global-computed.md#page) object. This function will be invoking once for each page at compile time.
+A function used to extend or edit the [$page](../guidelines/global-computed.md#page) object. This function will be invoking once for each page at compile time.
 
 ```js
 module.exports = {

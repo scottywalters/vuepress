@@ -2,8 +2,8 @@
 home: true
 heroImage: /hero.png
 actionText: Get Started →
-actionLink: /guide/
-footer: MIT Licensed | Copyright © 2018-present Evan You
+actionLink: /guidelines/
+footer: Copyright © 2020 Sun Nuclear Corporation
 ---
 
 <!-- <div style="text-align: center">

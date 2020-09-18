@@ -266,5 +266,5 @@ module.exports = {
 
 **Also see:**
 
-- [VuePress > Using Components](../../guide/using-vue.md#using-components)
-- [Vue > Scoped Slots](https://cn.vuejs.org/v2/guide/components-slots.html#scoped-slots)
+- [VuePress > Using Components](../../guidelines/using-vue.md#using-components)
+- [Vue > Scoped Slots](https://cn.vuejs.org/v2/guidelines/components-slots.html#scoped-slots)

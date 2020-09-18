@@ -17,16 +17,16 @@ Each Markdown file is compiled into HTML with [markdown-it](https://github.com/m
 
 **Built-in Markdown extensions**
 
-* [Table of Contents](../guide/markdown.md#table-of-contents)
-* [Custom Containers](../guide/markdown.md#custom-containers)
-* [Line Highlighting](../guide/markdown.md#line-highlighting-in-code-blocks)
-* [Line Numbers](../guide/markdown.md#line-numbers)
-* [Import Code Snippets](../guide/markdown.md#import-code-snippets)
+* [Table of Contents](../guidelines/markdown.md#table-of-contents)
+* [Custom Containers](../guidelines/markdown.md#custom-containers)
+* [Line Highlighting](../guidelines/markdown.md#line-highlighting-in-code-blocks)
+* [Line Numbers](../guidelines/markdown.md#line-numbers)
+* [Import Code Snippets](../guidelines/markdown.md#import-code-snippets)
 
 **Using Vue in Markdown**
 
-* [Templating](../guide/using-vue.md#templating)
-* [Using Components](../guide/using-vue.md#using-components)
+* [Templating](../guidelines/using-vue.md#templating)
+* [Using Components](../guidelines/using-vue.md#using-components)
 
 **Vue-powered custom theme system**
 
@@ -43,7 +43,7 @@ Each Markdown file is compiled into HTML with [markdown-it](https://github.com/m
 * [Auto-generated GitHub link and page edit links](../theme/default-theme-config.md#git-repo-and-edit-links)
 * [PWA: Popup UI to refresh contents](../theme/default-theme-config.md#popup-ui-to-refresh-contents)
 * [Last Updated](../theme/default-theme-config.md#last-updated)
-* [Multi-Language Support](../guide/i18n.md)
+* [Multi-Language Support](../guidelines/i18n.md)
 
 **Blog theme**
 

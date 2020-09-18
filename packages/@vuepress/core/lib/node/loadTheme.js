@@ -38,7 +38,7 @@ module.exports = function loadTheme (ctx) {
   if (!theme.path) {
     throw new Error(
       '[vuepress] You must specify a theme, or create a local custom theme. \n'
-        + 'For more details, refer to https://vuepress.vuejs.org/guide/custom-themes.html#custom-themes. \n'
+        + 'For more details, refer to https://vuepress.vuejs.org/guidelines/custom-themes.html#custom-themes. \n'
     )
   }
 

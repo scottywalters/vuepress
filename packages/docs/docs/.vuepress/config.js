@@ -6,7 +6,7 @@ module.exports = ctx => ({
     '/': {
       lang: 'en-US',
       title: 'Physics Design System',
-      description: 'Design System for SunCHECK™'
+      description: 'Design building blocks for SunCHECK™ products'
     },
   },
   head: [

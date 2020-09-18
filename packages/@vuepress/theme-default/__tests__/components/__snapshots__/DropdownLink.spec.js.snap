@@ -5,7 +5,7 @@ exports[`DropdownLink renders dropdown link. 1`] = `
   <ul class="nav-dropdown" style="display: none;" name="dropdown">
     <li class="dropdown-item">
       <!----> <a class="nav-link">
-        Guide
+        Guidelines
       </a></li>
     <li class="dropdown-item">
       <!----> <a class="nav-link">
