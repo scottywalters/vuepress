@@ -8,11 +8,6 @@ module.exports = ctx => ({
       title: 'Physics Design System',
       description: 'Design System for SunCHECK™'
     }
-    // '/zh/': {
-    //   lang: 'zh-CN',
-    //   title: 'Physics Design System',
-    //   description: 'Design System for SunCHECK™'
-    // }
   },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
@@ -30,11 +25,6 @@ module.exports = ctx => ({
     repo: 'scottywalters/vuepress',
     editLinks: true,
     docsDir: 'packages/docs/docs',
-    // #697 Provided by the official algolia team.
-    // algolia: ctx.isProd ? ({
-    //   apiKey: '3a539aab83105f01761a137c61004d85',
-    //   indexName: 'vuepress'
-    // }) : null,
     logo: '/logo.png',
     smoothScroll: true,
     search: true,
@@ -47,10 +37,10 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          '/api/': getApiSidebar(),
-          '/guidelines/': getGuideSidebar('Guidelines', 'Advanced'),
-          '/plugin/': getPluginSidebar('Plugin', 'Introduction', 'Official Plugins'),
-          '/theme/': getThemeSidebar('Theme', 'Introduction')
+          // '/api/': getApiSidebar(),
+          '/guidelines/': getGuideSidebar('Guidelines', 'Components', 'Patterns')
+          // '/plugin/': getPluginSidebar('Plugin', 'Introduction', 'Official Plugins'),
+          // '/theme/': getThemeSidebar('Theme', 'Introduction')
         }
       }
     }
@@ -78,19 +68,18 @@ module.exports = ctx => ({
     ['flowchart']
   ],
   extraWatchFiles: [
-    '.vuepress/nav/en.js',
-    '.vuepress/nav/zh.js'
+    '.vuepress/nav/en.js'
   ]
 })
 
-function getApiSidebar () {
-  return [
-    'cli',
-    'node'
-  ]
-}
+// function getApiSidebar () {
+//   return [
+//     'cli',
+//     'node'
+//   ]
+// }
 
-function getGuideSidebar (groupA, groupB) {
+function getGuideSidebar (groupA, groupB, groupC) {
   return [
     {
       title: groupA,
@@ -98,71 +87,68 @@ function getGuideSidebar (groupA, groupB) {
       children: [
         '',
         'color',
-        'typography',
-        'getting-started',
-        'directory-structure',
-        'basic-config',
-        'assets',
-        'markdown',
-        'using-vue',
-        'i18n',
-        'deploy'
+        'typography'
       ]
     },
     {
       title: groupB,
       collapsable: false,
       children: [
-        'frontmatter',
-        'permalinks',
-        'markdown-slot',
-        'global-computed'
-      ]
-    }
-  ]
-}
-
-const officalPlugins = fs
-  .readdirSync(path.resolve(__dirname, '../plugin/official'))
-  .map(filename => 'official/' + filename.slice(0, -3))
-  .sort()
-
-function getPluginSidebar (pluginTitle, pluginIntro, officialPluginTitle) {
-  return [
-    {
-      title: pluginTitle,
-      collapsable: false,
-      children: [
-        ['', pluginIntro],
-        'using-a-plugin',
-        'writing-a-plugin',
-        'life-cycle',
-        'option-api',
-        'context-api'
+        'button',
+        'checkbox'
       ]
     },
     {
-      title: officialPluginTitle,
+      title: groupC,
       collapsable: false,
-      children: officalPlugins
-    }
-  ]
-}
-
-function getThemeSidebar (groupA, introductionA) {
-  return [
-    {
-      title: groupA,
-      collapsable: false,
-      sidebarDepth: 2,
       children: [
-        ['', introductionA],
-        'using-a-theme',
-        'writing-a-theme',
-        'option-api',
-        'default-theme-config',
-        'inheritance'
+        'modal'
       ]
     }
   ]
 }
+
+// const officalPlugins = fs
+//   .readdirSync(path.resolve(__dirname, '../plugin/official'))
+//   .map(filename => 'official/' + filename.slice(0, -3))
+//   .sort()
+
+// function getPluginSidebar (pluginTitle, pluginIntro, officialPluginTitle) {
+//   return [
+//     {
+//       title: pluginTitle,
+//       collapsable: false,
+//       children: [
+//         ['', pluginIntro],
+//         'using-a-plugin',
+//         'writing-a-plugin',
+//         'life-cycle',
+//         'option-api',
+//         'context-api'
+//       ]
+//     },
+//     {
+//       title: officialPluginTitle,
+//       collapsable: false,
+//       children: officalPlugins
+//     }
+//   ]
+// }
+
+// function getThemeSidebar (groupA, introductionA) {
+//   return [
+//     {
+//       title: groupA,
+//       collapsable: false,
+//       sidebarDepth: 2,
+//       children: [
+//         ['', introductionA],
+//         'using-a-theme',
+//         'writing-a-theme',
+//         'option-api',
+//         'default-theme-config',
+//         'inheritance'
+//       ]
+//     }
+//   ]
+// }
