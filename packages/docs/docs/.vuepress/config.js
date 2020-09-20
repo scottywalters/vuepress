@@ -37,10 +37,8 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          // '/api/': getApiSidebar(),
-          '/guidelines/': getGuideSidebar('Guidelines', 'Components', 'Patterns')
-          // '/plugin/': getPluginSidebar('Plugin', 'Introduction', 'Official Plugins'),
-          // '/theme/': getThemeSidebar('Theme', 'Introduction')
+          '/guide/': getGuideSidebar('Guidelines', 'Components', 'Patterns'),
+          '/plugin/': getGuideSidebar('Plugin', 'Introduction', 'Official Plugins')
         }
       }
     }
@@ -72,83 +70,78 @@ module.exports = ctx => ({
   ]
 })
 
-// function getApiSidebar () {
-//   return [
-//     'cli',
-//     'node'
-//   ]
-// }
-
-function getGuideSidebar (groupA, groupB, groupC) {
-  return [
-    {
-      title: groupA,
-      collapsable: false,
-      children: [
-        '',
-        'color',
-        'typography'
-      ]
-    },
-    {
-      title: groupB,
-      collapsable: false,
-      children: [
-        'button',
-        'checkbox'
-      ]
-    },
-    {
-      title: groupC,
-      collapsable: false,
-      children: [
-        'modal'
-      ]
-    }
-  ]
-}
-
-// const officalPlugins = fs
-//   .readdirSync(path.resolve(__dirname, '../plugin/official'))
-//   .map(filename => 'official/' + filename.slice(0, -3))
-//   .sort()
-
-// function getPluginSidebar (pluginTitle, pluginIntro, officialPluginTitle) {
-//   return [
-//     {
-//       title: pluginTitle,
-//       collapsable: false,
-//       children: [
-//         ['', pluginIntro],
-//         'using-a-plugin',
-//         'writing-a-plugin',
-//         'life-cycle',
-//         'option-api',
-//         'context-api'
-//       ]
-//     },
-//     {
-//       title: officialPluginTitle,
-//       collapsable: false,
-//       children: officalPlugins
-//     }
-//   ]
-// }
-
-// function getThemeSidebar (groupA, introductionA) {
+// function getGuideSidebar (groupA, groupB, groupC) {
 //   return [
 //     {
 //       title: groupA,
 //       collapsable: false,
-//       sidebarDepth: 2,
 //       children: [
-//         ['', introductionA],
-//         'using-a-theme',
-//         'writing-a-theme',
-//         'option-api',
-//         'default-theme-config',
-//         'inheritance'
+//         '',
+//         'color',
+//         'typography'
+//       ]
+//     },
+//     {
+//       title: groupB,
+//       collapsable: false,
+//       children: [
+//         'button',
+//         'checkbox'
+//       ]
+//     },
+//     {
+//       title: groupC,
+//       collapsable: false,
+//       children: [
+//         'modal'
 //       ]
 //     }
 //   ]
 // }
+
+const guidelines = fs
+.readdirSync(path.resolve(__dirname, '../guide/guidelines'))
+.map(filename => 'guidelines/' + filename.slice(0, -3))
+.sort()
+
+const components = fs
+  .readdirSync(path.resolve(__dirname, '../guide/components'))
+  .map(filename => 'components/' + filename.slice(0, -3))
+  .sort()
+
+const patterns = fs
+.readdirSync(path.resolve(__dirname, '../guide/patterns'))
+.map(filename => 'patterns/' + filename.slice(0, -3))
+.sort()
+
+function getGuideSidebar (guidelinesTitle, componentsTitle, patternsTitle) {
+  return [
+    // {
+    //   title: guidelinesTitle,
+    //   collapsable: false,
+    //   children: [
+    //     ['', pluginIntro],
+    //     'using-a-plugin',
+    //     'writing-a-plugin',
+    //     'life-cycle',
+    //     'option-api',
+    //     'context-api'
+    //   ]
+    // },
+    {
+      title: guidelinesTitle,
+      collapsable: false,
+      children: guidelines
+    },
+    {
+      title: componentsTitle,
+      collapsable: false,
+      children: components
+    },
+    {
+      title: patternsTitle,
+      collapsable: false,
+      children: patterns
+    }
+  ]
+}
