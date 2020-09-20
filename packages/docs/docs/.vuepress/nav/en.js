@@ -4,15 +4,11 @@ module.exports = [
     link: '/guide/'
   },
   {
-    text: 'Contributing',
-    link: '/config/'
+    text: 'How to Contribute',
+    link: '/contributing/'
   },
   {
-    text: 'Plugin',
-    link: '/plugin/'
-  },
-  {
-    text: 'Theme',
-    link: '/theme/'
+    text: 'Get Help',
+    link: '/help/'
   }
 ]

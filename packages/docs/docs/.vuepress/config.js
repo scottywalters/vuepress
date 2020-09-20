@@ -38,7 +38,7 @@ module.exports = ctx => ({
         nav: require('./nav/en'),
         sidebar: {
           '/guide/': getGuideSidebar('Guidelines', 'Components', 'Patterns'),
-          '/plugin/': getGuideSidebar('Plugin', 'Introduction', 'Official Plugins')
+          '/help/': getHelpSidebar('Help')
         }
       }
     }
@@ -70,34 +70,19 @@ module.exports = ctx => ({
   ]
 })
 
-// function getGuideSidebar (groupA, groupB, groupC) {
-//   return [
-//     {
-//       title: groupA,
-//       collapsable: false,
-//       children: [
-//         '',
-//         'color',
-//         'typography'
-//       ]
-//     },
-//     {
-//       title: groupB,
-//       collapsable: false,
-//       children: [
-//         'button',
-//         'checkbox'
-//       ]
-//     },
-//     {
-//       title: groupC,
-//       collapsable: false,
-//       children: [
-//         'modal'
-//       ]
-//     }
-//   ]
-// }
+function getHelpSidebar (groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: [
+        '',
+        'contact',
+        'faq'
+      ]
+    }
+  ]
+}
 
 const guidelines = fs
 .readdirSync(path.resolve(__dirname, '../guide/guidelines'))
