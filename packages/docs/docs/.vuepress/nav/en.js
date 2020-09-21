@@ -1,10 +1,10 @@
 module.exports = [
   {
-    text: 'Guidelines',
+    text: 'Guide',
     link: '/guide/'
   },
   {
-    text: 'How to Contribute',
+    text: 'Contribute',
     link: '/contributing/'
   },
   {

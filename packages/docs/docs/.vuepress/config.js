@@ -53,6 +53,21 @@ module.exports = ctx => ({
     ['@vuepress/google-analytics', {
       ga: 'UA-177805551-1'
     }],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'right',
+        defaultTitle: '',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'theorem',
+        before: info => `<div class="theorem"><p class="title">${info}</p>`,
+        after: '</div>',
+      },
+    ],
     ['container', {
       type: 'vue',
       before: '<pre class="vue-container"><code>',
