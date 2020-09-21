@@ -21,18 +21,14 @@ Do not use buttons as a navigational element that routes the user to a new page.
 ## Code
 
 ``` html
-<snc-btn>Default</snc-btn>
- 
-<snc-btn variant="primary">Primary Button</snc-btn>
-<snc-btn variant="secondary">Secondary Button</snc-btn>
-<snc-btn variant="transparent">Transparent Button</snc-btn>
- 
-<snc-btn variant="primary">
-  <snc-icon>plus</snc-icon>
-  <span>Label with Icon</span>
-</snc-btn>
- 
-<snc-btn variant="transparent" title="Icon with Hover Label"><snc-icon>pencil</snc-icon></snc-btn>
+    <b-button variant="primary">Primary</b-button>
+    <b-button variant="secondary">Secondary</b-button>
+    <b-button variant="success">Success</b-button>
+    <b-button variant="danger">Danger</b-button>
+    <b-button variant="warning">Warning</b-button>
+    <b-button variant="info">Info</b-button>
+    <b-button variant="light">Light</b-button>
+    <b-button variant="dark">Dark</b-button>
 ```
 
 <!-- ::: theorem Newton's First Law
