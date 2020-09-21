@@ -46,8 +46,13 @@ module.exports = ctx => ({
   plugins: [
     ['@vuepress/back-to-top', true],
     ['@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: true
+      serviceWorker: false,
+      updatePopup: {
+        '/': {
+          message: "New content is available.",
+          buttonText: "Refresh"
+        }
+      }
     }],
     ['@vuepress/medium-zoom', true],
     ['@vuepress/google-analytics', {
@@ -145,3 +150,5 @@ function getGuideSidebar (guidelinesTitle, componentsTitle, patternsTitle) {
     }
   ]
 }
+
+
