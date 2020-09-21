@@ -14,6 +14,8 @@ Do not use buttons as a navigational element that routes the user to a new page.
 
 ## Button Variants
 
+<buttons />
+
 ## Anatomy
 
 ## Code

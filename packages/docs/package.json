@@ -50,5 +50,10 @@
     "vue-toasted": "^1.1.25",
     "vuepress": "^1.2.0",
     "vuepress-plugin-flowchart": "^1.4.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
+    "vue": "^2.6.12"
   }
 }

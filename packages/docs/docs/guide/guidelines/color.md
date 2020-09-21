@@ -5,6 +5,7 @@
 ## Usage
 
 Explicit usage of color...
+<OtherComponent/>
 
 ## This
 
