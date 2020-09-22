@@ -1,4 +1,4 @@
-# Button
+# Button <Badge text="in-progress" type="warning" vertical="middle" />
 
 The button is a very common element that can be used as a call to action that enables the user to perform various tasks from within the application. Button labels are used to describe the action that will be performed after the user presses it. Buttons are categorized based on their relative importance to the content it relates to.
 
@@ -14,7 +14,47 @@ Do not use buttons as a navigational element that routes the user to a new page.
 
 ## Button Variants
 
-## Anatomy
+![Architecture of VuePress](/doc-img/btn-variants.png)
+
+| Variant     	| Purpose                                                                       	|
+|:------------	|:------------------------------------------------------------------------------	|
+| Primary     	| For the most prominent call to action for the current page.                   	|
+| Secondary   	| For additional actions on the current page.                                   	|
+| Transparent 	| For the least prominent actions such as repeating items in lists and tables.  	|
+
+
+## Design
+
+### Anatomy
+
+![Architecture of VuePress](/doc-img/anatomy.png)
+
+
+
+### Styles
+
+| Style      	| Default        	| Primary  	| Secondary 	| Transparent 	|
+|:----------	|:---------------	|:---------	|:----------	|:------------	|
+| Corners    	| rounded-0      	|          	|           	|             	|
+| Background 	| bg-secondary   	| blue-700 	| gray-300  	| none        	|
+| Color      	| text-secondary 	| gray-900 	| blue-700  	| gray-100    	|
+| Text       	| text-3         	|          	|           	| text-2      	|
+| Padding    	| px-4 py-3      	|          	| px-3 py-2 	| px-2 py-1   	|
+
+### State
+
+| State    	| Style                   	| Description                                                                                 	|
+|:---------	|:------------------------	|:--------------------------------------------------------------------------------------------	|
+| Inactive 	| default                 	| The default state of the button.                                                            	|
+| Hover    	| darken-20               	| When the button is being interacted with, but not activated.                                	|
+| Focus    	| border-dark             	| When the button is ready to be activated.                                                   	|
+| Active   	| darken-20 border-dark   	| While the button is being activated.                                                        	|
+| Load     	| opacity-50 icon-loading 	| While the button is waiting to become available, it cannot be interacted with or activated. 	|
+| Save     	| opacity-50 icon-saving  	| While the button is processing its action, it cannot be interacted with or activated.       	|
+| Disable  	| opacity-50              	| When the button cannot be interacted with or activated.                                     	|
+
+
+
 
 ## Code
 
@@ -33,11 +73,35 @@ Do not use buttons as a navigational element that routes the user to a new page.
 <snc-btn variant="transparent" title="Icon with Hover Label"><snc-icon>pencil</snc-icon></snc-btn>
 ```
 
+
 <!-- ::: theorem Newton's First Law
 In an inertial frame of reference, an object either remains at rest or continues to move at a constant velocity, unless acted upon by a force.
 
 ::: right
 From [Wikipedia](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion)
 ::: -->
+
+### Props
+
+| Variant     	| Purpose                                                                      	|
+|:------------	|:-----------------------------------------------------------------------------	|
+| Primary     	| For the most prominent call to action for the current page.                  	|
+| Secondary   	| For additional actions on the current page.                                  	|
+| Transparent 	| For the least prominent actions such as repeating items in lists and tables. 	|
+
+### Slots
+
+| Slot    	| Purpose                                                    	|
+|:--------	|:-----------------------------------------------------------	|
+| Default 	| The content within button, usually a label, icon, or both. 	|
+
+
+### Events
+
+| Event 	| Description                        	|
+|:------	|:-----------------------------------	|
+| Click 	| Called when the button is pressed. 	|
+
+
 
 
