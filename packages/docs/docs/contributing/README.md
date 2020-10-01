@@ -5,7 +5,7 @@ sidebar: auto
 
 # Contribute
 
-You can contribute to the content on the Carbon site in a few different ways.
+You can contribute to the content on the site in a few different ways.
 Choose the way that works best, depending on how extensive your contribution is.
 And be sure to read our content writing guidelines before you begin!
 
@@ -46,13 +46,13 @@ it easy for anyone to contribute content in a systematic way. If you don't
 already have a Markdown editor installed, there are plenty of free editors
 available online.
 
-Check out Carbon's handy markdown
+Check out our handy markdown
 [styling cheatsheet](https://github.com/carbon-design-system/carbon-website/wiki/Markdown-cheatsheet)
 for how to style content.
 
 ### Guidelines for writing content
 
-Please keep these things in mind when writing content for Carbon.
+Please keep these things in mind when writing content.
 
 - Aim for a friendly and encouraging tone.
 - Speak directly to the user. You can use the second person pronoun ("you").

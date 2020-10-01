@@ -3,7 +3,7 @@ home: true
 heroImage: /hero.png
 actionText: Get Started →
 actionLink: /guide/
-footer: Sun Nuclear Corporation. All Rights Reserved
+footer: © 2020 Sun Nuclear Corporation. All rights reserved.
 ---
 
 <div class="features">
