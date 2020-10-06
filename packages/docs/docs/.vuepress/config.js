@@ -51,7 +51,7 @@ module.exports = ctx => ({
     ['vuepress-plugin-code-copy', true],
     ['@vuepress/back-to-top', true],
     ['@vuepress/pwa', {
-      serviceWorker: false,
+      serviceWorker: true,
       updatePopup: {
           message: "New content is available.",
           buttonText: "Refresh"
