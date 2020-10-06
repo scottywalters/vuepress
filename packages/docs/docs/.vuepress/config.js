@@ -117,56 +117,46 @@ function getSunDoseSidebar (groupA) {
       children: [
         ['', 'Overview'],
         'color',
+        'button',
         'typography',
-        'boxshadows'
+        'boxshadows',
+        'combo-boxes'
       ]
     }
   ]
 }
 
-const guidelines = fs
+const suncheckGuidelines = fs
 .readdirSync(path.resolve(__dirname, '../guide/guidelines'))
 .map(filename => 'guidelines/' + filename.slice(0, -3))
 .sort()
 
-const components = fs
+const suncheckComponents = fs
   .readdirSync(path.resolve(__dirname, '../guide/components'))
   .map(filename => 'components/' + filename.slice(0, -3))
   .sort()
 
-const patterns = fs
+const suncheckPatterns = fs
 .readdirSync(path.resolve(__dirname, '../guide/patterns'))
 .map(filename => 'patterns/' + filename.slice(0, -3))
 .sort()
 
-function getGuideSidebar (guidelinesTitle, componentsTitle, patternsTitle) {
+function getGuideSidebar (SunCheckGuidelinesTitle, SunCheckComponentsTitle, SunCheckPatternsTitle) {
   return [
-    // {
-    //   title: guidelinesTitle,
-    //   collapsable: false,
-    //   children: [
-    //     ['', pluginIntro],
-    //     'using-a-plugin',
-    //     'writing-a-plugin',
-    //     'life-cycle',
-    //     'option-api',
-    //     'context-api'
-    //   ]
-    // },
     {
-      title: guidelinesTitle,
-      collapsable: false,
-      children: guidelines
+      title: SunCheckGuidelinesTitle,
+      collapsable: true,
+      children: suncheckGuidelines
     },
     {
-      title: componentsTitle,
-      collapsable: false,
-      children: components
+      title: SunCheckComponentsTitle,
+      collapsable: true,
+      children: suncheckComponents
     },
     {
-      title: patternsTitle,
-      collapsable: false,
-      children: patterns
+      title: SunCheckPatternsTitle,
+      collapsable: true,
+      children: suncheckPatterns
     }
   ]
 }
