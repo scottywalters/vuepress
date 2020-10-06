@@ -1,7 +1,7 @@
 module.exports = [
   {
     text: 'SunCHECK™',
-    link: '/guide/'
+    link: '/suncheck/'
   },
   {
     text: 'SunDOSE™',

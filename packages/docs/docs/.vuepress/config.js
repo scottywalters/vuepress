@@ -40,9 +40,9 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          '/guide/': getGuideSidebar('SunCHECK™', 'Guidelines', 'Components', 'Patterns'),
-          '/help/': getHelpSidebar('Help'),
-          '/sundose/': getSunDoseSidebar('SunDOSE™', 'Guidelines', 'Components', 'Patterns')
+          '/suncheck/': getGuideSidebar('SunCHECK™', 'Guidelines', 'Components', 'Patterns'),
+          '/sundose/': getSunDoseSidebar('SunDOSE™', 'Guidelines', 'Components', 'Patterns'),
+          '/help/': getHelpSidebar('Help')
         }
       }
     }
@@ -95,10 +95,10 @@ module.exports = ctx => ({
   ]
 })
 
-function getHelpSidebar (groupA) {
+function getHelpSidebar (helpTitle) {
   return [
     {
-      title: groupA,
+      title: helpTitle,
       collapsable: false,
       children: [
         ['', 'Overview'],
@@ -152,17 +152,17 @@ function getSunDoseSidebar (SunDoseTitle, SunDoseGuidelinesTitle, SunDoseCompone
 }
 
 const suncheckGuidelines = fs
-.readdirSync(path.resolve(__dirname, '../guide/guidelines'))
+.readdirSync(path.resolve(__dirname, '../suncheck/guidelines'))
 .map(filename => 'guidelines/' + filename.slice(0, -3))
 .sort()
 
 const suncheckComponents = fs
-  .readdirSync(path.resolve(__dirname, '../guide/components'))
+  .readdirSync(path.resolve(__dirname, '../suncheck/components'))
   .map(filename => 'components/' + filename.slice(0, -3))
   .sort()
 
 const suncheckPatterns = fs
-.readdirSync(path.resolve(__dirname, '../guide/patterns'))
+.readdirSync(path.resolve(__dirname, '../suncheck/patterns'))
 .map(filename => 'patterns/' + filename.slice(0, -3))
 .sort()
 
