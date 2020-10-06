@@ -40,9 +40,9 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          '/guide/': getGuideSidebar('Guidelines', 'Components', 'Patterns'),
+          '/guide/': getGuideSidebar('SunCHECK™', 'Guidelines', 'Components', 'Patterns'),
           '/help/': getHelpSidebar('Help'),
-          '/sundose/': getSunDoseSidebar('SunDOSE™')
+          '/sundose/': getSunDoseSidebar('SunDOSE™', 'Guidelines', 'Components', 'Patterns')
         }
       }
     }
@@ -101,27 +101,52 @@ function getHelpSidebar (groupA) {
       title: groupA,
       collapsable: false,
       children: [
-        '',
-        'contact',
-        'faq'
+        ['', 'Overview'],
+        'faq',
+        'contact'
       ]
     }
   ]
 }
 
-function getSunDoseSidebar (groupA) {
+const sundoseGuidelines = fs
+.readdirSync(path.resolve(__dirname, '../sundose/guidelines'))
+.map(filename => 'guidelines/' + filename.slice(0, -3))
+.sort()
+
+const sundoseComponents = fs
+  .readdirSync(path.resolve(__dirname, '../sundose/components'))
+  .map(filename => 'components/' + filename.slice(0, -3))
+  .sort()
+
+const sundosePatterns = fs
+.readdirSync(path.resolve(__dirname, '../sundose/patterns'))
+.map(filename => 'patterns/' + filename.slice(0, -3))
+.sort()
+
+function getSunDoseSidebar (SunDoseTitle, SunDoseGuidelinesTitle, SunDoseComponentsTitle, SunDosePatternsTitle) {
   return [
     {
-      title: groupA,
+      title: SunDoseTitle,
       collapsable: false,
       children: [
-        ['', 'Overview'],
-        'color',
-        'button',
-        'typography',
-        'boxshadows',
-        'combo-boxes'
+        ['', 'Overview']
       ]
+    },
+    {
+      title: SunDoseGuidelinesTitle,
+      collapsable: true,
+      children: sundoseGuidelines
+    },
+    {
+      title: SunDoseComponentsTitle,
+      collapsable: true,
+      children: sundoseComponents
+    },
+    {
+      title: SunDosePatternsTitle,
+      collapsable: true,
+      children: sundosePatterns
     }
   ]
 }
@@ -141,8 +166,15 @@ const suncheckPatterns = fs
 .map(filename => 'patterns/' + filename.slice(0, -3))
 .sort()
 
-function getGuideSidebar (SunCheckGuidelinesTitle, SunCheckComponentsTitle, SunCheckPatternsTitle) {
+function getGuideSidebar (SunCheckTitle, SunCheckGuidelinesTitle, SunCheckComponentsTitle, SunCheckPatternsTitle) {
   return [
+    {
+      title: SunCheckTitle,
+      collapsable: false,
+      children: [
+        ['', 'Overview']
+      ]
+    },
     {
       title: SunCheckGuidelinesTitle,
       collapsable: true,

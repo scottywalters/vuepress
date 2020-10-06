@@ -2,4 +2,6 @@
 sidebarDepth: 0
 ---
 
-# Getting help
+# Overview
+
+### Where to get help
