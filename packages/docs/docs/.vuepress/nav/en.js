@@ -1,7 +1,11 @@
 module.exports = [
   {
-    text: 'Guide',
+    text: 'SunCHECK™',
     link: '/guide/'
+  },
+  {
+    text: 'SunDOSE™',
+    link: '/sundose/'
   },
   {
     text: 'Contribute',

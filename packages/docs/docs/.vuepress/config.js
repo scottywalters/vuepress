@@ -20,12 +20,15 @@ module.exports = ctx => ({
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  theme: '@vuepress/vue',
+  theme: 'vuepress-theme-succinct',
+  globalUIComponents: [
+    'ThemeManager'
+  ],
   themeConfig: {
     repo: 'scottywalters/vuepress',
     editLinks: true,
     docsDir: 'packages/docs/docs',
-    logo: '/logo.png',
+    // logo: '/logo.png',
     smoothScroll: true,
     search: true,
     locales: {
@@ -38,7 +41,8 @@ module.exports = ctx => ({
         nav: require('./nav/en'),
         sidebar: {
           '/guide/': getGuideSidebar('Guidelines', 'Components', 'Patterns'),
-          '/help/': getHelpSidebar('Help')
+          '/help/': getHelpSidebar('Help'),
+          '/sundose/': getSunDoseSidebar('SunDOSE™')
         }
       }
     }
@@ -100,6 +104,21 @@ function getHelpSidebar (groupA) {
         '',
         'contact',
         'faq'
+      ]
+    }
+  ]
+}
+
+function getSunDoseSidebar (groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: [
+        ['', 'Overview'],
+        'color',
+        'typography',
+        'boxshadows'
       ]
     }
   ]
