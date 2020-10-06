@@ -53,11 +53,9 @@ module.exports = ctx => ({
     ['@vuepress/pwa', {
       serviceWorker: false,
       updatePopup: {
-        '/': {
           message: "New content is available.",
           buttonText: "Refresh"
         }
-      }
     }],
     ['@vuepress/medium-zoom', true],
     ['@vuepress/google-analytics', {
