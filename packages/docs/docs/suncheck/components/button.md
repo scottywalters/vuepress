@@ -20,7 +20,7 @@ Do not use buttons as a navigational element that routes the user to a new page.
 
 ## Button Variants
 
-![Architecture of VuePress](/doc-img/btn-variants.png)
+![Architecture of VuePress](/images/suncheck/components/btn-variants.png)
 
 | Variant     	| Purpose                                                                       	|
 |:------------	|:------------------------------------------------------------------------------	|
@@ -33,7 +33,7 @@ Do not use buttons as a navigational element that routes the user to a new page.
 
 ### Anatomy
 
-![Architecture of VuePress](/doc-img/anatomy.png)
+![Architecture of VuePress](/images/suncheck/components/anatomy.png)
 
 
 
@@ -78,14 +78,6 @@ Do not use buttons as a navigational element that routes the user to a new page.
  
 <snc-btn variant="transparent" title="Icon with Hover Label"><snc-icon>pencil</snc-icon></snc-btn>
 ```
-
-
-<!-- ::: theorem Newton's First Law
-In an inertial frame of reference, an object either remains at rest or continues to move at a constant velocity, unless acted upon by a force.
-
-::: right
-From [Wikipedia](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion)
-::: -->
 
 ### Props
 
