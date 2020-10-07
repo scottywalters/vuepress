@@ -20,10 +20,14 @@ module.exports = ctx => ({
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  theme: 'vuepress-theme-succinct',
-  globalUIComponents: [
-    'ThemeManager'
-  ],
+  // theme: 'vuepress-theme-succinct',
+  // globalUIComponents: [
+  //   'ThemeManager'
+  // ],
+  // theme: 'vuepress-theme-vuetify',
+  themeConfig: {
+    // Please head documentation to see the available options.
+  },
   themeConfig: {
     repo: 'scottywalters/vuepress',
     editLinks: true,
@@ -41,7 +45,6 @@ module.exports = ctx => ({
         nav: require('./nav/en'),
         sidebar: {
           '/suncheck/': getGuideSidebar('SunCHECK™', 'Guidelines', 'Components', 'Patterns'),
-          '/sundose/': getSunDoseSidebar('SunDOSE™', 'Guidelines', 'Components', 'Patterns'),
           '/help/': getHelpSidebar('Help')
         }
       }
@@ -107,47 +110,7 @@ function getHelpSidebar (helpTitle) {
   ]
 }
 
-const sundoseGuidelines = fs
-.readdirSync(path.resolve(__dirname, '../sundose/guidelines'))
-.map(filename => 'guidelines/' + filename.slice(0, -3))
-.sort()
 
-const sundoseComponents = fs
-  .readdirSync(path.resolve(__dirname, '../sundose/components'))
-  .map(filename => 'components/' + filename.slice(0, -3))
-  .sort()
-
-const sundosePatterns = fs
-.readdirSync(path.resolve(__dirname, '../sundose/patterns'))
-.map(filename => 'patterns/' + filename.slice(0, -3))
-.sort()
-
-function getSunDoseSidebar (SunDoseTitle, SunDoseGuidelinesTitle, SunDoseComponentsTitle, SunDosePatternsTitle) {
-  return [
-    {
-      title: SunDoseTitle,
-      collapsable: false,
-      children: [
-        ['', 'Overview']
-      ]
-    },
-    {
-      title: SunDoseGuidelinesTitle,
-      collapsable: true,
-      children: sundoseGuidelines
-    },
-    {
-      title: SunDoseComponentsTitle,
-      collapsable: true,
-      children: sundoseComponents
-    },
-    {
-      title: SunDosePatternsTitle,
-      collapsable: true,
-      children: sundosePatterns
-    }
-  ]
-}
 
 const suncheckGuidelines = fs
 .readdirSync(path.resolve(__dirname, '../suncheck/guidelines'))

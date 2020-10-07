@@ -50,7 +50,8 @@
     "vue-toasted": "^1.1.25",
     "vuepress": "^1.2.0",
     "vuepress-plugin-flowchart": "^1.4.2",
-    "vuepress-theme-succinct": "^1.6.1"
+    "vuepress-theme-succinct": "^1.6.1",
+    "vuepress-theme-vuetify": "^1.0.1"
   },
   "dependencies": {
     "vuepress-plugin-code-copy": "^1.0.6"
