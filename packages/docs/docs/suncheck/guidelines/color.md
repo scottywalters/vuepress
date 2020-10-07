@@ -10,7 +10,3 @@ sidebarDepth: 0
 ## Usage
 
 Explicit usage of color...
-
-## This
-
-asdf

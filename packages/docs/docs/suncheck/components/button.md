@@ -4,7 +4,7 @@ sidebarDepth: 0
 
 ---
 
-# Button <Badge text="in-progress" type="warning" vertical="middle" />
+# Button <Badge text="stable" type="success" vertical="top" />
 
 The button is a very common element that can be used as a call to action that enables the user to perform various tasks from within the application. Button labels are used to describe the action that will be performed after the user presses it. Buttons are categorized based on their relative importance to the content it relates to.
 
@@ -20,7 +20,7 @@ Do not use buttons as a navigational element that routes the user to a new page.
 
 ## Button Variants
 
-![Architecture of VuePress](/images/suncheck/components/btn-variants.png)
+![Button variants](/images/suncheck/components/btn-variants.png)
 
 | Variant     	| Purpose                                                                       	|
 |:------------	|:------------------------------------------------------------------------------	|
