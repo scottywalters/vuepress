@@ -41,7 +41,6 @@ module.exports = ctx => ({
         nav: require('./nav/en'),
         sidebar: {
           '/suncheck/': getGuideSidebar('SunCHECK™', 'Guidelines', 'Components', 'Patterns'),
-          '/sundose/': getSunDoseSidebar('SunDOSE™', 'Guidelines', 'Components', 'Patterns'),
           '/help/': getHelpSidebar('Help')
         }
       }
@@ -103,48 +102,6 @@ function getHelpSidebar (helpTitle) {
         'faq',
         'contact'
       ]
-    }
-  ]
-}
-
-const sundoseGuidelines = fs
-.readdirSync(path.resolve(__dirname, '../sundose/guidelines'))
-.map(filename => 'guidelines/' + filename.slice(0, -3))
-.sort()
-
-const sundoseComponents = fs
-  .readdirSync(path.resolve(__dirname, '../sundose/components'))
-  .map(filename => 'components/' + filename.slice(0, -3))
-  .sort()
-
-const sundosePatterns = fs
-.readdirSync(path.resolve(__dirname, '../sundose/patterns'))
-.map(filename => 'patterns/' + filename.slice(0, -3))
-.sort()
-
-function getSunDoseSidebar (SunDoseTitle, SunDoseGuidelinesTitle, SunDoseComponentsTitle, SunDosePatternsTitle) {
-  return [
-    {
-      title: SunDoseTitle,
-      collapsable: false,
-      children: [
-        ['', 'Overview']
-      ]
-    },
-    {
-      title: SunDoseGuidelinesTitle,
-      collapsable: true,
-      children: sundoseGuidelines
-    },
-    {
-      title: SunDoseComponentsTitle,
-      collapsable: true,
-      children: sundoseComponents
-    },
-    {
-      title: SunDosePatternsTitle,
-      collapsable: true,
-      children: sundosePatterns
     }
   ]
 }

@@ -12,7 +12,7 @@ footer: © 2020 Sun Nuclear Corporation. All rights reserved.
     <p>Content</p>
   </div>
   <div class="feature">
-    <h2>SunDOSE™</h2>
+    <h2>Product</h2>
     <p>Content</p>
   </div>
   <div class="feature">
