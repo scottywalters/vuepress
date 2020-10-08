@@ -10,3 +10,5 @@ sidebarDepth: 0
 ## Usage
 
 Explicit usage of color...
+
+<color />

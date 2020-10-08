@@ -20,10 +20,10 @@ module.exports = ctx => ({
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  theme: 'vuepress-theme-succinct',
-  globalUIComponents: [
-    'ThemeManager'
-  ],
+  // theme: 'vuepress-theme-succinct',
+  // globalUIComponents: [
+  //   'ThemeManager'
+  // ],
   themeConfig: {
     repo: 'scottywalters/vuepress',
     editLinks: true,
