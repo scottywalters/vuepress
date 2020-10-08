@@ -2,21 +2,21 @@
 home: true
 heroImage: /hero.png
 actionText: Get Started →
-actionLink: /guide/
-footer: Sun Nuclear Corporation. All Rights Reserved
+actionLink: /suncheck/
+footer: © 2020 Sun Nuclear Corporation. All rights reserved.
 ---
 
 <div class="features">
   <div class="feature">
-    <h2>First</h2>
-    <p>Content...</p>
+    <h2>SunCHECK™</h2>
+    <p>Content</p>
   </div>
   <div class="feature">
-    <h2>Second</h2>
-    <p>Content...</p>
+    <h2>Product</h2>
+    <p>Content</p>
   </div>
   <div class="feature">
-    <h2>Third</h2>
-    <p>Content...</p>
+    <h2>Another Project</h2>
+    <p>Content</p>
   </div>
 </div>

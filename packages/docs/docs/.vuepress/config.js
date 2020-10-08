@@ -6,7 +6,7 @@ module.exports = ctx => ({
     '/': {
       lang: 'en-US',
       title: 'Physics Design System',
-      description: 'Design System for SunCHECK™'
+      description: 'A Design System for Sun Nuclear\'s Digital Products'
     }
   },
   head: [
@@ -20,12 +20,15 @@ module.exports = ctx => ({
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  theme: '@vuepress/vue',
+  theme: 'vuepress-theme-succinct',
+  globalUIComponents: [
+    'ThemeManager'
+  ],
   themeConfig: {
     repo: 'scottywalters/vuepress',
     editLinks: true,
     docsDir: 'packages/docs/docs',
-    logo: '/logo.png',
+    // logo: '/logo.png',
     smoothScroll: true,
     search: true,
     locales: {
@@ -37,22 +40,21 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          '/guide/': getGuideSidebar('Guidelines', 'Components', 'Patterns'),
+          '/suncheck/': getGuideSidebar('SunCHECK™', 'Guidelines', 'Components', 'Patterns'),
           '/help/': getHelpSidebar('Help')
         }
       }
     }
   },
   plugins: [
+    ['vuepress-plugin-code-copy', true],
     ['@vuepress/back-to-top', true],
     ['@vuepress/pwa', {
-      serviceWorker: false,
+      serviceWorker: true,
       updatePopup: {
-        '/': {
           message: "New content is available.",
           buttonText: "Refresh"
         }
-      }
     }],
     ['@vuepress/medium-zoom', true],
     ['@vuepress/google-analytics', {
@@ -90,63 +92,58 @@ module.exports = ctx => ({
   ]
 })
 
-function getHelpSidebar (groupA) {
+function getHelpSidebar (helpTitle) {
   return [
     {
-      title: groupA,
+      title: helpTitle,
       collapsable: false,
       children: [
-        '',
-        'contact',
-        'faq'
+        ['', 'Overview'],
+        'faq',
+        'contact'
       ]
     }
   ]
 }
 
-const guidelines = fs
-.readdirSync(path.resolve(__dirname, '../guide/guidelines'))
+const suncheckGuidelines = fs
+.readdirSync(path.resolve(__dirname, '../suncheck/guidelines'))
 .map(filename => 'guidelines/' + filename.slice(0, -3))
 .sort()
 
-const components = fs
-  .readdirSync(path.resolve(__dirname, '../guide/components'))
+const suncheckComponents = fs
+  .readdirSync(path.resolve(__dirname, '../suncheck/components'))
   .map(filename => 'components/' + filename.slice(0, -3))
   .sort()
 
-const patterns = fs
-.readdirSync(path.resolve(__dirname, '../guide/patterns'))
+const suncheckPatterns = fs
+.readdirSync(path.resolve(__dirname, '../suncheck/patterns'))
 .map(filename => 'patterns/' + filename.slice(0, -3))
 .sort()
 
-function getGuideSidebar (guidelinesTitle, componentsTitle, patternsTitle) {
+function getGuideSidebar (SunCheckTitle, SunCheckGuidelinesTitle, SunCheckComponentsTitle, SunCheckPatternsTitle) {
   return [
-    // {
-    //   title: guidelinesTitle,
-    //   collapsable: false,
-    //   children: [
-    //     ['', pluginIntro],
-    //     'using-a-plugin',
-    //     'writing-a-plugin',
-    //     'life-cycle',
-    //     'option-api',
-    //     'context-api'
-    //   ]
-    // },
     {
-      title: guidelinesTitle,
+      title: SunCheckTitle,
       collapsable: false,
-      children: guidelines
+      children: [
+        ['', 'Overview']
+      ]
     },
     {
-      title: componentsTitle,
-      collapsable: false,
-      children: components
+      title: SunCheckGuidelinesTitle,
+      collapsable: true,
+      children: suncheckGuidelines
     },
     {
-      title: patternsTitle,
-      collapsable: false,
-      children: patterns
+      title: SunCheckComponentsTitle,
+      collapsable: true,
+      children: suncheckComponents
+    },
+    {
+      title: SunCheckPatternsTitle,
+      collapsable: true,
+      children: suncheckPatterns
     }
   ]
 }
