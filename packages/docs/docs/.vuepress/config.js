@@ -20,7 +20,7 @@ module.exports = ctx => ({
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  // theme: 'vuepress-theme-succinct',
+  theme: '@vuepress/theme-vue',
   // globalUIComponents: [
   //   'ThemeManager'
   // ],
@@ -132,7 +132,7 @@ function getGuideSidebar (SunCheckTitle, SunCheckGuidelinesTitle, SunCheckCompon
     },
     {
       title: SunCheckGuidelinesTitle,
-      collapsable: true,
+      collapsable: false,
       children: suncheckGuidelines
     },
     {
