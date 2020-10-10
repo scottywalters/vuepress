@@ -1,49 +1,27 @@
 <template>
-    <div>
-        <div>
-            <b-card-group deck>
-            <b-card bg-variant="primary" text-variant="white" header="Primary" class="text-center">
-                <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
-            </b-card>
-
-            <b-card bg-variant="secondary" text-variant="white" header="Secondary" class="text-center">
-                <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
-            </b-card>
-
-            <b-card bg-variant="success" text-variant="white" header="Success" class="text-center">
-                <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
-            </b-card>
-            </b-card-group>
-        </div>
-        <div class="mt-3">
-            <b-card-group deck>
-            <b-card bg-variant="info" text-variant="white" header="Info" class="text-center">
-                <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
-            </b-card>
-
-            <b-card bg-variant="warning" text-variant="white" header="Warning" class="text-center">
-                <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
-            </b-card>
-
-            <b-card bg-variant="danger" text-variant="white" header="Danger" class="text-center">
-                <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
-            </b-card>
-            </b-card-group>
-        </div>
-        <div class="mt-3">
-            <b-card-group deck>
-            <b-card bg-variant="light" header="Light" class="text-center">
-                <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
-            </b-card>
-
-            <b-card bg-variant="dark" header="Dark" text-variant="white" class="text-center">
-                <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
-            </b-card>
-
-            <b-card header="Default" class="text-center">
-                <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
-            </b-card>
-            </b-card-group>
-        </div>
-    </div>
+  <div>
+      {{data.color}}
+    <b-table  hover :items="items" :fields="fields"></b-table>
+  </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        // Note `isActive` is left out and will not appear in the rendered table
+        fields: ['token', 'usage', 'value', 'example'],
+        items: [
+          { isActive: false, token: '$ui-background', usage: 'This is used for the default background', value: '#ffffff'},
+          { isActive: false, token: '$interactive-01', usage: 'Primary interactive color & Primary buttons', value: '#0f62fe' },
+          { isActive: false, token: '$interactive-02', usage: 'Secondary interactive color & Secondary button', value: '#393939' }
+        ]
+      }
+    },
+    computed: {
+    data () {
+      return this.$page.frontmatter
+    },
+  }
+  }
+</script>
