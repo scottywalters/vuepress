@@ -118,6 +118,7 @@ a.sidebar-link
   box-sizing: border-box
   &:hover
     color $accentColor
+    text-decoration none
   &.active
     font-weight 600
     color $accentColor

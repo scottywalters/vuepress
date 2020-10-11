@@ -42,7 +42,20 @@ pre.vue-container
     text-align right
 
 // Code Copy
-.code-copy svg.hover {
-    top: 7.5px;
-    right: 86px;
-}
+.code-copy svg.hover
+    top 7.5px
+    right 86px
+
+.table-of-contents
+    ul
+        list-style-type "\21B3"
+        li
+            &:hover
+                color #0f62fe
+                text-decoration none !important
+            a
+                margin-left 10px
+                color #333333
+                &:hover
+                    color inherit
+                    text-decoration none !important

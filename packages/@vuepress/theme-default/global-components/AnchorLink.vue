@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 a.anchor-link
     width 40%
     font-weight 600;

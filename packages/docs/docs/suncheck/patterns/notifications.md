@@ -2,13 +2,7 @@
 
 Notifications should be relevant to the user and as minimally disruptive as possible. There are two major use cases for notifications: **Task Generated** notifications and **System Generated** notifications.
 
-<AnchorLink link="#what-notification-to-use" text="What to Use"/>
-
-<AnchorLink link="#when-to-use" text="How to Use"/>
-
 [[TOC]]
-
-
 
 ### Task Generatied notifications
 
