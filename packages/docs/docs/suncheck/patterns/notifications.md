@@ -1,12 +1,25 @@
 # Notifications
 
-Contents
-- [What to use](#decide-what-notification-to-use)
-- [When to use](#decide-when-to-use)
+Notifications should be relevant to the user and as minimally disruptive as possible. There are two major use cases for notifications: **Task Generated** notifications and **System Generated** notifications.
 
----
+<AnchorLink link="#what-notification-to-use" text="What to Use"/>
 
-### Decide what notification to use
+<AnchorLink link="#when-to-use" text="How to Use"/>
+
+[[TOC]]
+
+
+
+### Task Generatied notifications
+
+Task generatied notifications are invoked in response to the user's interaction during a task. They should be place in the immediate area of the interaction where the user is working.
+
+### System Generated notifications
+
+System generated notifications are invoked by the application or the underlying system infrastructure. These nnotifications provide feedback on the system state or state of a background-running process.
+
+
+### What notification to use
 
 | Status        	| Usage                                                                                             	| Action                                                                                                         	| Color  	| Icon    	|
 |---------------	|---------------------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------------------------------------	|--------	|---------	|
@@ -15,7 +28,7 @@ Contents
 | Warning       	| Inform users that they are taking actions that are not desirable or might have unexpected results 	| Often persist until the user dismisses the notification or continues in their task                             	| Yellow 	| Warning 	|
 | Failure       	| Inform users that they are taking actions that are not desirable or might have unexpected results 	| Always persist until the user dismisses them or resolves error                                                 	| Red    	| Failure 	|
 
-### Decide when to use
+### When to use
 
 | Type               	| Usage                                                                                                             	| Interaction                                                                                                                                      	|
 |--------------------	|-------------------------------------------------------------------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------	|

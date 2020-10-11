@@ -5,7 +5,7 @@
   >
     <header class="hero">
       <img
-        v-if="data.heroImage"
+        v-if="!data.heroImage"
         :src="$withBase(data.heroImage)"
         :alt="data.heroAlt || 'hero'"
       >
@@ -21,7 +21,8 @@
         v-if="data.tagline !== null"
         class="description"
       >
-        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
+      The Physics Design System is for Sun Nuclear's digital products and experiences. With the Physics™ Design Language as its foundation, the design system consists of working code, tools for designing, and interface guidelines and best practices.
+        <!-- {{ data.tagline || $description || 'Welcome to your VuePress site' }} -->
       </p>
 
       <p
@@ -101,7 +102,7 @@ export default {
     h1, .description, .action
       margin 1.8rem auto
     .description
-      max-width 35rem
+      max-width 50rem
       font-size 1.6rem
       line-height 1.3
       color lighten($textColor, 40%)
