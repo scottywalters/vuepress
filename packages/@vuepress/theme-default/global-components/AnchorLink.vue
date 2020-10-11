@@ -7,7 +7,6 @@
 
 <script>
 export default {
-  name: "AnchorLink",
   props: {
     link: {
       type: String,
