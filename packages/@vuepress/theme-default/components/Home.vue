@@ -1,45 +1,28 @@
 <template>
-  <main
-    class="home"
-    aria-labelledby="main-title"
-  >
+  <main class="home" aria-labelledby="main-title">
     <header class="hero">
       <img
-        v-if="!data.heroImage"
+        v-if="data.heroImage"
         :src="$withBase(data.heroImage)"
         :alt="data.heroAlt || 'hero'"
-      >
+      />
 
-      <h1
-        v-if="data.heroText !== null"
-        id="main-title"
-      >
-        {{ data.heroText || $title || 'Hello' }}
+      <h1 v-if="data.heroText !== null" id="main-title">
+        {{ data.heroText || $title || "Hello" }}
       </h1>
-
-      <p
-        v-if="data.tagline !== null"
-        class="description"
-      >
-      The Physics Design System is for Sun Nuclear's digital products and experiences. With the Physics™ Design Language as its foundation, the design system consists of working code, tools for designing, and interface guidelines and best practices.
+      <p v-if="data.tagline !== null" class="description">
+        With the SunCHECK™ Design Language as its foundation, the
+        design system consists of working code, tools for designing, and
+        interface guidelines.
         <!-- {{ data.tagline || $description || 'Welcome to your VuePress site' }} -->
       </p>
 
-      <p
-        v-if="data.actionText && data.actionLink"
-        class="action"
-      >
-        <NavLink
-          class="action-button"
-          :item="actionLink"
-        />
+      <p v-if="data.actionText && data.actionLink" class="action">
+        <NavLink class="action-button" :item="actionLink" />
       </p>
     </header>
 
-    <div
-      v-if="data.features && data.features.length"
-      class="features"
-    >
+    <div v-if="data.features && data.features.length" class="features">
       <div
         v-for="(feature, index) in data.features"
         :key="index"
@@ -52,36 +35,33 @@
 
     <Content class="theme-default-content custom" />
 
-    <div
-      v-if="data.footer"
-      class="footer"
-    >
+    <div v-if="data.footer" class="footer">
       {{ data.footer }}
     </div>
   </main>
 </template>
 
 <script>
-import NavLink from '@theme/components/NavLink.vue'
+import NavLink from "@theme/components/NavLink.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
 
   components: { NavLink },
 
   computed: {
-    data () {
-      return this.$page.frontmatter
+    data() {
+      return this.$page.frontmatter;
     },
 
-    actionLink () {
+    actionLink() {
       return {
         link: this.data.actionLink,
         text: this.data.actionText
-      }
+      };
     }
   }
-}
+};
 </script>
 
 <style lang="stylus">

@@ -5,7 +5,7 @@ module.exports = ctx => ({
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'Physics Design System',
+      title: 'Design System',
       description: 'A Design System for Sun Nuclear\'s Digital Products'
     }
   },
@@ -25,6 +25,7 @@ module.exports = ctx => ({
   //   'ThemeManager'
   // ],
   themeConfig: {
+    featureOne: 'suncheck-machine.svg',
     repo: 'scottywalters/vuepress',
     editLinks: true,
     docsDir: 'packages/docs/docs',
@@ -137,7 +138,7 @@ function getGuideSidebar (SunCheckTitle, SunCheckGuidelinesTitle, SunCheckCompon
     },
     {
       title: SunCheckComponentsTitle,
-      collapsable: true,
+      collapsable: false,
       children: suncheckComponents
     },
     {
