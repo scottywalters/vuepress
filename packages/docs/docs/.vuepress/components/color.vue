@@ -3,20 +3,21 @@
     <b-table
       :fields="fields"
       :items="this.data.items"
-      responsive="sm"
       head-variant="light"
     >
+    <template v-slot:cell(token)="data">
+      <code>{{ data.item.token }}</code>
+    </template>
       <template v-slot:cell(example)="data">
         <b-img
           rounded="circle"
           blank
-          :blank-color="data.item.hexValue"
+          :blank-color="data.item.hex"
           width="64"
           alt="Color"
-          thumbnail
+          class="colorSwatch mx-auto d-block"
         ></b-img>
-        <!-- {{ data.item.hexValue }} -->
-        <b-button @click="debug(data.item.hexValue)" v-text="data.item.hexValue"/>
+        <code>{{ data.item.hex }}</code>
       </template>
     </b-table>
   </div>
@@ -26,17 +27,12 @@
 export default {
   data() {
     return {
-      fields: ["token", "usage", "hexValue", "example"]
+      fields: ["token", "usage", "example"]
     };
   },
   computed: {
     data() {
       return this.$page.frontmatter;
-    }
-  },
-  methods: {
-    debug(event) {
-      console.log('hexValue -', event);
     }
   }
 };
@@ -45,4 +41,7 @@ export default {
 <style lang="stylus" scoped>
 .img-thumbnail
   padding: 0
+
+.colorSwatch
+  margin-bottom 8px
 </style>
