@@ -41,7 +41,7 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          '/suncheck/': getGuideSidebar('SunCHECK™', 'Guidelines', 'Components', 'Patterns'),
+          '/suncheck/': getGuideSidebar('SunCHECK™', 'Guidelines', 'Components', 'Patterns', 'Data Visualization'),
           '/help/': getHelpSidebar('Help')
         }
       }
@@ -122,7 +122,12 @@ const suncheckPatterns = fs
 .map(filename => 'patterns/' + filename.slice(0, -3))
 .sort()
 
-function getGuideSidebar (SunCheckTitle, SunCheckGuidelinesTitle, SunCheckComponentsTitle, SunCheckPatternsTitle) {
+const suncheckDataVisualization = fs
+.readdirSync(path.resolve(__dirname, '../suncheck/dataVisualization'))
+.map(filename => 'dataVisualization/' + filename.slice(0, -3))
+.sort()
+
+function getGuideSidebar (SunCheckTitle, SunCheckGuidelinesTitle, SunCheckComponentsTitle, SunCheckPatternsTitle, SunCheckDataVisualizationTitle) {
   return [
     {
       title: SunCheckTitle,
@@ -133,18 +138,23 @@ function getGuideSidebar (SunCheckTitle, SunCheckGuidelinesTitle, SunCheckCompon
     },
     {
       title: SunCheckGuidelinesTitle,
-      collapsable: false,
+      collapsable: true,
       children: suncheckGuidelines
     },
     {
       title: SunCheckComponentsTitle,
-      collapsable: false,
+      collapsable: true,
       children: suncheckComponents
     },
     {
       title: SunCheckPatternsTitle,
       collapsable: true,
       children: suncheckPatterns
+    },
+    {
+      title: SunCheckDataVisualizationTitle,
+      collapsable: true,
+      children: suncheckDataVisualization
     }
   ]
 }

@@ -5,32 +5,50 @@
     [
       {
         token: "$interactive-01",
-        usage: "Primary interactive color & Primary buttons",
-        hex: "#262626",
+        usage: "Primary interactive color & Primary buttons.",
+        hex: "#0262FF",
       },
       {
-        token: "$ui-background",
-        usage: "This is used for the default background",
+        token: "$ui-background-01",
+        usage: "This is used for the default background.",
         hex: "#FFFFFF",
       },
-      {
-        token: "$interactive-02",
-        usage: "Secondary interactive color & Secondary button",
+            {
+        token: "$ui-background-02",
+        usage: "Used for the secondary backgrounds and containers.",
         hex: "#F4F4F4",
       },
       {
-        token: "$danger",
-        usage: "Inform the user of irreversible actions that may not be able to be undone",
+        token: "$interactive-02",
+        usage: "Secondary interactive color & Secondary button.",
+        hex: "#F4F4F4",
+      },
+      {
+        token: "$text-01",
+        usage: "Dark text used primarily on white and light backgrounds.",
+        hex: "#171717",
+      },
+      { token: "$text-02", usage: "...", hex: "#565656" },
+      { token: "$text-03", usage: "...", hex: "#8C8C8C" },
+      {
+        token: "$text-04",
+        usage: "Light text used on dark or primary color backgrounds.",
+        hex: "#FFFFFF",
+      },
+      { token: "$row-hover", usage: "Table row hover state.", hex: "#AADFF6" },
+      {
+        token: "$support-danger",
+        usage: "Warn the user of irreversible actions.",
         hex: "#DA1E28",
       },
       {
-        token: "$warning",
-        usage: "Inform the user of possible unwanted actions.",
+        token: "$support-warning",
+        usage: "Warn the user of possible unwanted actions.",
         hex: "#FDD13A",
       },
       {
-        token: "$success",
-        usage: "Inform of a successful background process, action, or validation",
+        token: "$support-success",
+        usage: "Notify the user of successful background processes, actions, or validations",
         hex: "#24A148",
       },
     ],
