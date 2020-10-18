@@ -4,6 +4,8 @@ Notifications should be relevant to the user and as minimally disruptive as poss
 
 [[TOC]]
 
+---
+
 ### Task Generatied notifications
 
 Task generatied notifications are invoked in response to the user's interaction during a task. They should be place in the immediate area of the interaction where the user is working.
@@ -28,6 +30,6 @@ System generated notifications are invoked by the application or the underlying 
 |--------------------	|-------------------------------------------------------------------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Banner             	| System or product level notifications that are not specific to a task                                             	| Persist until dismissed by user and may include a ghost button or link                                                                           	|
 | Inline             	| Provide users with nondisruptive feedback or the status of an action                                              	| Persist until the message is resolved or dismissed by user and may include a ghost button action                                                 	|
-| Modal              	| Highly disruptive notifications that provide users with critical information that needs their attention or action 	| Persist and block tasks until dismissed by user. Modals allow more user action than other notifications and can include other design components. 	|
+| [Modal](/suncheck/components/modal.html)              	| Highly disruptive notifications that provide users with critical information that needs their attention or action 	| Persist and block tasks until dismissed by user. Modals allow more user action than other notifications and can include other design components. 	|
 | Notification panel 	| Notification center that provides users with system-generated messages                                            	| Opened and closed by user                                                                                                                        	|
-| Toast              	| Short, time-based messages that slide in and out of a page and provide nondisruptive information                  	| Disappear automatically or can be dismissed by user                                                                                              	|v
+[Toast](/suncheck/components/toast.html)              	| Short, time-based messages that slide in and out of a page and provide nondisruptive information                  	| Disappear automatically or can be dismissed by user                                                                                              	|v
