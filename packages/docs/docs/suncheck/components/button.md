@@ -16,7 +16,7 @@ The button is a very common element that can be used as a call to action that en
 
 
 ``` html
-    <b-button variant="primary">Primary</b-button>
+    <b-button variant="primary">Primaasdfasdfasdfry</b-button>
     <b-button variant="secondary">Secondary</b-button>
     <b-button variant="success">Success</b-button>
     <b-button variant="danger">Danger</b-button>
